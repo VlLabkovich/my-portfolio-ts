@@ -12,9 +12,7 @@ export const Main: React.FC = () => {
                     <MainContent>
                         <MainTitle>FRONT-END DEVELOPER</MainTitle>
                         <Name>Vladislav Labkovich</Name>
-                        <Text>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat
-                            duis enim velit mollit. Exercitation veniam consequat sunt.</Text>
+                        <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line of code at a time.</Text>
                         <StyledButton>Contact Me</StyledButton>
                     </MainContent>
                     <Photo src={photo}></Photo>
@@ -25,7 +23,7 @@ export const Main: React.FC = () => {
 };
 
 const StyledMain = styled.div`
-    min-height: 100vh;
+    min-height: 100%;
 `
 
 const MainContent = styled.div`
