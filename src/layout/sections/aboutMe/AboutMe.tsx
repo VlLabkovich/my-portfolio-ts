@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Container} from "../../../components/Container";
+import {SectionTitle} from "../../../components/SectionTitle";
 
 export const AboutMe: React.FC = () => {
     return (
@@ -16,11 +17,6 @@ export const AboutMe: React.FC = () => {
 const StyledAboutMe = styled.section`
 min-height: 100%;
 `
-
-const SectionTitle = styled.h2`
-
-`
-
 const Text = styled.p`
 
 `
