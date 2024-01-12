@@ -12,7 +12,8 @@ export const Main: React.FC = () => {
                     <MainContent>
                         <MainTitle>FRONT-END DEVELOPER</MainTitle>
                         <Name>Vladislav Labkovich</Name>
-                        <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line of code at a time.</Text>
+                        <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line of code at a time.
+                        </Text>
                         <StyledButton>Contact Me</StyledButton>
                     </MainContent>
                     <Photo src={photo}></Photo>
@@ -23,12 +24,13 @@ export const Main: React.FC = () => {
 };
 
 const StyledMain = styled.div`
-    min-height: 100%;
+    min-height: 100vh;
 `
 
 const MainContent = styled.div`
     width: 520px;
-    height: 278px;
+    min-height: 278px;
+    outline: 3px solid red;
 `
 
 const MainTitle = styled.h1`
