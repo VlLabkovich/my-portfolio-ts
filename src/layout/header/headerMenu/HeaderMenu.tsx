@@ -1,22 +1,15 @@
-import React from 'react';
 import styled from "styled-components";
 
-export const HeaderMenu: React.FC = () => {
+export const HeaderMenu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
     return (
         <StyledMenu>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Skills</a>
+            <ul>
+                {props.menuItems.map((item, index) => {
+                    return <li key={index}>
+                        <a href="">{item}</a>
                     </li>
-                    <li>
-                        <a href="">Projects</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+                })}
+            </ul>
         </StyledMenu>
     );
 };
@@ -24,12 +17,14 @@ export const HeaderMenu: React.FC = () => {
 const StyledMenu = styled.nav`
     ul {
         display: flex;
-        flex-direction: row;
         gap: 50px;
         list-style: none;
     }
+
     a {
         text-decoration: none;
     }
+
     padding-right: 15px;
+    //outline: 3px dotted brown;
 `
