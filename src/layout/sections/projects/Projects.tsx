@@ -14,7 +14,7 @@ export const Projects: React.FC = () => {
         <StyledProjects>
             <Container>
                 <SectionTitle>My Projects</SectionTitle>
-                <FlexWrapper wrap={'wrap'} gap={'27px'} >
+                <FlexWrapper wrap={'wrap'} gap={'27px'} justify={'center'}>
                     <Project image={ProjectOne} title={'Social Network'} tagFirst={'JavaScript'} tagSecond={'PostgreSQL'} tagThree={'React'} tagFour={'redux'} text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'} />
                     <Project image={ProjectSecond} title={'SendPay Platform'} tagFirst={'JavaScript'} tagSecond={'React Native'} tagThree={'Redux'} text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'} />
                     <Project image={ProjectThree} title={'E-commerce'} tagFirst={'JavaScript'} tagSecond={'React Native'} tagThree={'PostgreSQL'} text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'} />
