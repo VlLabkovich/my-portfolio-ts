@@ -8,7 +8,7 @@ export const Main: React.FC = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper justify={'space-between'}>
+                <FlexWrapper justify={'space-between'} wrap={'wrap'}>
                     <MainContent>
                         <MainTitle>FRONT-END DEVELOPER</MainTitle>
                         <Name>Vladislav Labkovich</Name>
@@ -30,7 +30,7 @@ const StyledMain = styled.div`
 const MainContent = styled.div`
     width: 520px;
     min-height: 278px;
-    outline: 3px solid red;
+    //outline: 3px solid red;
 `
 
 const MainTitle = styled.h1`
