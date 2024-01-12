@@ -41,5 +41,5 @@ export const Skills: React.FC = () => {
 };
 
 const StyledSkills = styled.section`
-    min-height: 100%;
+    min-height: 100vh;
 `
