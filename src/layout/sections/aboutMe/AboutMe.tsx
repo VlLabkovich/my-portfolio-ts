@@ -15,7 +15,7 @@ export const AboutMe: React.FC = () => {
 };
 
 const StyledAboutMe = styled.section`
-min-height: 100vh;
+min-height: 100%;
 `
 const Text = styled.p`
 
