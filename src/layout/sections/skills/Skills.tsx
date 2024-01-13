@@ -9,7 +9,7 @@ export const Skills: React.FC = () => {
     return (
         <StyledSkills>
             <Container>
-                <SectionTitle>My Skills</SectionTitle>
+                <SectionTitle>Tech Skills</SectionTitle>
                 <FlexWrapper justify={'center'} align={'center'} wrap={'wrap'}>
                     <Skill iconId={'html'}
                            title={'HTML'}/>
