@@ -13,7 +13,7 @@ export const Projects: React.FC = () => {
     return (
         <StyledProjects>
             <Container>
-                <SectionTitle>My Projects</SectionTitle>
+                <SectionTitle>Projects</SectionTitle>
                 <FlexWrapper wrap={'wrap'} gap={'27px'} justify={'center'}>
                     <Project image={ProjectOne} title={'Social Network'} tagFirst={'JavaScript'} tagSecond={'PostgreSQL'} tagThree={'React'} tagFour={'redux'} text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'} />
                     <Project image={ProjectSecond} title={'SendPay Platform'} tagFirst={'JavaScript'} tagSecond={'React Native'} tagThree={'Redux'} text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'} />
