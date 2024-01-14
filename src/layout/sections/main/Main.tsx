@@ -4,6 +4,7 @@ import photo from "../../../assets/images/photo.jpg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {Icon} from "../../../components/icon/Icon";
+import {Button} from "../../../components/Button";
 
 export const Main: React.FC = () => {
     return (
@@ -16,7 +17,7 @@ export const Main: React.FC = () => {
                         <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line
                             of code at a time.
                         </Text>
-                        <StyledButton>Contact Me</StyledButton>
+                        <Button type={'submit'}>Contact Me</Button>
                     </MainContent>
                     <Photo src={photo}></Photo>
                     <StyledScrollLink>
@@ -58,11 +59,6 @@ const Photo = styled.img`
     object-fit: cover;
     border-radius: 10px;
 `
-
-const StyledButton = styled.button`
-
-`
-
 const StyledScrollLink = styled.a`
     position: absolute;
     top: 90%;
