@@ -31,11 +31,6 @@ export const StyledMenu = styled.nav<MenuPropsType>`
         display: flex;
         align-items: center;
         justify-content: center;
-        list-style: none;
-
-    }
-    a {
-        text-decoration: none;
     }
 
 
@@ -43,7 +38,6 @@ export const StyledMenu = styled.nav<MenuPropsType>`
         ul {
             gap: 45px;
         }
-        outline: 2px dashed green;
 
     `
     };
