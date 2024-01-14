@@ -5,13 +5,14 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Icon} from "../../components/icon/Icon";
 import {Menu} from "../../components/Menu";
 
+
 const itemsFooter = [
     {
         text: 'Projects',
-        href: 'https://yandex.by/search/?text=git+oy+sheet&lr=157'
+        href: '#'
     }, {
         text: 'Contact',
-        href: 'https://yandex.by/search/?text=git+oy+sheet&lr=157'
+        href: '#'
     },
 ];
 
@@ -34,7 +35,7 @@ export const Footer: React.FC = () => {
                             <StyledTitle>linkedin</StyledTitle>
                         </a>
                     </StyledFooterIcon>
-                    <Menu menuItems={itemsFooter}  StyledMenu={"secondary"}/>
+                    <Menu menuItems={itemsFooter} StyledMenu={"secondary"}/>
                     <Copyright>© 2024 Labkovich Vladislav, All Rights Reserved.</Copyright>
                 </FlexWrapper>
             </Container>
@@ -60,10 +61,6 @@ const StyledFooterIcon = styled.div`
 `
 
 const StyledTitle = styled.span`
-`
-
-const StyledList = styled.ul`
-    gap: 48px;
 `
 
 const Copyright = styled.small`
