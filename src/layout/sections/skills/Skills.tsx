@@ -28,11 +28,11 @@ export const Skills: React.FC = () => {
                            height={'120'}
                            viewBox={'0 0 88 88'}
                            title={'BOOTSTRAP'}/>
-                    <Skill iconId={'docker'} width={'120'} height={'120'} viewBox={'-10 10 130 100'}
+                    <Skill iconId={'docker'} viewBox={'-10 10 130 100'}
                            title={'DOCKER'}/>
-                    <Skill iconId={'git'} width={'109'} height={'120'} viewBox={'0 0 108 97'}
+                    <Skill iconId={'git'} viewBox={'-6 -4 117 102'}
                            title={'GIT'}/>
-                    <Skill iconId={'gitHub'} width={'120'} height={'120'} viewBox={'0 -10 86 95'}
+                    <Skill iconId={'gitHub'} viewBox={'0 -10 86 95'}
                            title={'GITHUB'}/>
                 </FlexWrapper>
             </Container>
