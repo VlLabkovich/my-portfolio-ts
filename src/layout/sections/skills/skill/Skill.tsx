@@ -23,9 +23,9 @@ export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
     );
 };
 
-const StyledSkill = styled.section`
-    width: 20%;
-
+const StyledSkill = styled.div`
+    width: 15%;
+    margin: 10px;
 `
 
 const SkillTitle = styled.h3`
