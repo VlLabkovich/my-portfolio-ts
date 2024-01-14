@@ -3,9 +3,20 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {HeaderMenu} from "./headerMenu/HeaderMenu";
+import {Menu} from "../../components/Menu";
 
-const items = ['Skills', 'Projects', 'Contact'];
+const itemsHeader = [
+    {
+        text: 'Skills',
+        href: '#'
+    }, {
+        text: 'Projects',
+        href: '#'
+    }, {
+        text: 'Contact',
+        href: '#'
+    },
+];
 
 export const Header: React.FC = () => {
     return (
@@ -13,7 +24,7 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
-                    <HeaderMenu menuItems={items}/>
+                    <Menu menuItems={itemsHeader} StyledMenu={"primary"}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
