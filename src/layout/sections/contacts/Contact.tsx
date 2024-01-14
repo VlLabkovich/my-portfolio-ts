@@ -25,7 +25,7 @@ export const Contacts: React.FC = () => {
 };
 
 const StyledContacts = styled.section`
-    min-height: 100vh;
+    min-height: 80vh;
 `
 
 const StyledForm = styled.form`
