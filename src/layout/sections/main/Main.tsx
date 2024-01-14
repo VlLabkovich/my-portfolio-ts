@@ -3,6 +3,7 @@ import styled, {StyleSheetManager} from "styled-components";
 import photo from "../../../assets/images/photo.jpg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
+import {Icon} from "../../../components/icon/Icon";
 
 export const Main: React.FC = () => {
     return (
@@ -12,11 +13,17 @@ export const Main: React.FC = () => {
                     <MainContent>
                         <MainTitle>FRONT-END DEVELOPER</MainTitle>
                         <Name>Vladislav Labkovich</Name>
-                        <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line of code at a time.
+                        <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line
+                            of code at a time.
                         </Text>
                         <StyledButton>Contact Me</StyledButton>
                     </MainContent>
                     <Photo src={photo}></Photo>
+                    <StyledScrollLink>
+                        <a href="#">
+                            <Icon iconId={'scroll'} width="32" height="32" viewBox="0 0 32 32"/>
+                        </a>
+                    </StyledScrollLink>
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -54,4 +61,10 @@ const Photo = styled.img`
 
 const StyledButton = styled.button`
 
+`
+
+const StyledScrollLink = styled.a`
+    position: absolute;
+    top: 90%;
+    left: 50%;
 `
