@@ -26,19 +26,16 @@ export const Menu = (props: MenuPropsType) => {
 };
 
 export const StyledMenu = styled.nav<MenuPropsType>`
-    
     ul{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-
+    
     ${props => props.StyledMenu === "primary" && css<MenuPropsType>`
         ul {
             gap: 45px;
         }
-
     `
     };
 
@@ -46,15 +43,7 @@ export const StyledMenu = styled.nav<MenuPropsType>`
         ul {
             display: flex;
             gap: 48px;
-            justify-content: space-around;
         }
-
-
-        li {
-            background-color: grey;
-        }
-
-        outline: 2px dashed red;
     `
     };
 `
