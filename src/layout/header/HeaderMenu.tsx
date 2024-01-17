@@ -1,6 +1,6 @@
 import React from "react";
 import styled, {css} from "styled-components";
-import {Button, ButtonPropsType} from "./Button";
+import {Button, ButtonPropsType} from "../../components/Button";
 
 export type MenuPropsType = {
     menuItems: Array<{
@@ -11,9 +11,9 @@ export type MenuPropsType = {
 }
 
 
-export const Menu = (props: MenuPropsType) => {
+export const HeaderMenu = (props: MenuPropsType) => {
     return (
-        <StyledMenu>
+        <StyledHeaderMenu>
             <ul>
                 {props.menuItems.map((item, index) => {
                     return <li key={index} >
@@ -22,12 +22,12 @@ export const Menu = (props: MenuPropsType) => {
                     </li>
                 })}
             </ul>
-        </StyledMenu>
+        </StyledHeaderMenu>
 
     )
 };
 
-export const StyledMenu = styled.nav`
+export const StyledHeaderMenu = styled.nav`
     ul {
         display: flex;
         align-items: center;
