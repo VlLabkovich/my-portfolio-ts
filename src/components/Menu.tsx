@@ -1,22 +1,24 @@
 import React from "react";
 import styled, {css} from "styled-components";
+import {Button, ButtonPropsType} from "./Button";
 
 export type MenuPropsType = {
     menuItems: Array<{
         text: string
         href: string
+        btnType: string
     }>
-    StyledMenu: "primary" | "secondary"
 }
 
 
 export const Menu = (props: MenuPropsType) => {
     return (
-        <StyledMenu StyledMenu={props.StyledMenu} menuItems={props.menuItems}>
+        <StyledMenu>
             <ul>
-                {props.menuItems?.map((item, index) => {
-                    return <li key={index}>
-                        <a href={item.href}>{item.text}</a>
+                {props.menuItems.map((item, index) => {
+                    return <li key={index} >
+                        {/*<a href={item.href}>{item.text}</a>*/}
+                        <Button btnType={item.btnType} as={"a"} href={item.href}>{item.text}</Button>
                     </li>
                 })}
             </ul>
@@ -25,26 +27,13 @@ export const Menu = (props: MenuPropsType) => {
     )
 };
 
-export const StyledMenu = styled.nav<MenuPropsType>`
-    ul{
+export const StyledMenu = styled.nav`
+    ul {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 45px;
     }
-    
-    ${props => props.StyledMenu === "primary" && css<MenuPropsType>`
-        ul {
-            gap: 45px;
-        }
-    `
-    };
 
-    ${props => props.StyledMenu === "secondary" && css<MenuPropsType>`
-        ul {
-            display: flex;
-            gap: 48px;
-        }
-    `
-    };
 `
 
