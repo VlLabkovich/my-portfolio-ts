@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {Icon} from "../../../components/icon/Icon";
 import {Button} from "../../../components/Button";
+import {Theme} from "../../../styles/Theme";
 
 export const Main: React.FC = () => {
     return (
@@ -17,7 +18,7 @@ export const Main: React.FC = () => {
                         <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line
                             of code at a time.
                         </Text>
-                        <Button type={'submit'}>Contact Me</Button>
+                        <Button btnType={'primary'} type={'submit'}>Contact Me</Button>
                     </MainContent>
                     <Photo src={photo}></Photo>
                     <StyledScrollLink>
@@ -33,24 +34,43 @@ export const Main: React.FC = () => {
 
 const StyledMain = styled.div`
     min-height: 100vh;
+    
+    // ${Button} {
+    //     padding: 29px 380px 0 6px;
+    // }
+    
 `
 
 const MainContent = styled.div`
     width: 520px;
-    min-height: 278px;
+    height: 278px;
+    margin-top: 40px;
     //outline: 3px solid red;
 `
 
 const MainTitle = styled.h1`
-
+    color: ${Theme.colors.font};
+    font-family: Tinos, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 253px 10px 6px;
 `
 
 const Name = styled.h2`
-
+    color: ${Theme.colors.accent};
+    font-size: 62px;
+    font-weight: 600;
+    line-height: normal;
 `
 
 const Text = styled.p`
-
+    color:  ${Theme.colors.text};
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.64px;
+    padding: 11px 0 29px 6px;
 `
 
 const Photo = styled.img`
@@ -58,9 +78,10 @@ const Photo = styled.img`
     height: 482px;
     object-fit: cover;
     border-radius: 10px;
+    margin-top: 40px;
 `
 const StyledScrollLink = styled.a`
     position: absolute;
-    top: 90%;
+    margin-top: 565px;
     left: 50%;
 `
