@@ -9,10 +9,12 @@ import {Menu} from "../../components/Menu";
 const itemsFooter = [
     {
         text: 'Projects',
-        href: '#'
+        href: '#',
+        btnType: 'secondary'
     }, {
         text: 'Contact',
-        href: '#'
+        href: '#',
+        btnType: 'secondary'
     },
 ];
 
@@ -35,7 +37,7 @@ export const Footer: React.FC = () => {
                             <StyledTitle>linkedin</StyledTitle>
                         </a>
                     </StyledFooterIcon>
-                    <Menu menuItems={itemsFooter} StyledMenu={"secondary"}/>
+                    <Menu menuItems={itemsFooter}/>
                     <Copyright>© 2024 Labkovich Vladislav, All Rights Reserved.</Copyright>
                 </FlexWrapper>
             </Container>
