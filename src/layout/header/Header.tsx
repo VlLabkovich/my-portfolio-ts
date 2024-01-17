@@ -8,13 +8,16 @@ import {Menu} from "../../components/Menu";
 const itemsHeader = [
     {
         text: 'Skills',
-        href: '#'
+        href: '#',
+        btnType: 'secondary'
     }, {
         text: 'Projects',
-        href: '#'
+        href: '#',
+        btnType: 'secondary'
     }, {
         text: 'Contact',
-        href: '#'
+        href: '#',
+        btnType: 'primary'
     },
 ];
 
@@ -24,7 +27,7 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
-                    <Menu menuItems={itemsHeader} StyledMenu={"primary"}/>
+                    <Menu menuItems={itemsHeader}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
