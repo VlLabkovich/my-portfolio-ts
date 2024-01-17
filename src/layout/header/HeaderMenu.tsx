@@ -1,6 +1,6 @@
 import React from "react";
 import styled, {css} from "styled-components";
-import {Button, ButtonPropsType} from "../../components/Button";
+import {Button} from "../../components/Button";
 
 export type MenuPropsType = {
     menuItems: Array<{
