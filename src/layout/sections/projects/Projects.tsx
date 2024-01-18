@@ -27,4 +27,5 @@ export const Projects: React.FC = () => {
 
 const StyledProjects = styled.section`
     min-height: 100vh;
+    margin: 140px 0;
 `
