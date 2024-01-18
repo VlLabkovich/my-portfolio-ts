@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {StyleSheetManager} from "styled-components";
+import styled from "styled-components";
 import photo from "../../../assets/images/photo.jpg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
@@ -34,11 +34,6 @@ export const Main: React.FC = () => {
 
 const StyledMain = styled.div`
     min-height: 100vh;
-    
-    // ${Button} {
-    //     padding: 29px 380px 0 6px;
-    // }
-    
 `
 
 const MainContent = styled.div`
@@ -82,6 +77,6 @@ const Photo = styled.img`
 `
 const StyledScrollLink = styled.a`
     position: absolute;
-    margin-top: 565px;
+    top: 92%;
     left: 50%;
 `
