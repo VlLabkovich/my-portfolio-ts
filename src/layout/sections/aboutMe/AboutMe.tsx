@@ -3,40 +3,65 @@ import styled from "styled-components";
 import {Container} from "../../../components/Container";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Theme} from "../../../styles/Theme";
 
 export const AboutMe: React.FC = () => {
     return (
         <StyledAboutMe>
+
             <Container>
-                <SectionTitle>About Me</SectionTitle>
-                <FlexWrapper>
-                    <Text>The long barrow was built on land previously inhabited in the Mesolithic period. It consisted
-                        of a sub-rectangular earthen tumulus, estimated to have been 15 metres (50 feet) in length, with
-                        a chamber built from sarsen megaliths on its eastern end. Both inhumed and cremated human
-                        remains were placed within this chamber during the Neolithic period, representing at least nine
-                        or ten individuals.</Text>
-                </FlexWrapper>
+                <StyledContent>
+                    <FlexWrapper>
+                        <SectionTitle>About Me</SectionTitle>
+                        <Text>The long barrow was built on land previously inhabited in the Mesolithic period. It consisted
+                            of a sub-rectangular earthen tumulus, estimated to have been 15 metres (50 feet) in length, with
+                            a chamber built from sarsen megaliths on its eastern end. Both inhumed and cremated human
+                            remains were placed within this chamber during the Neolithic period, representing at least nine
+                            or ten individuals.</Text>
+                    </FlexWrapper>
+                </StyledContent>
             </Container>
+
         </StyledAboutMe>
     );
 };
 
 const StyledAboutMe = styled.section`
-    min-height: 100%;
+min-height: 50vh;
 `
+
+const StyledContent = styled.div`
+    width: 843px;
+    min-height: 123px;
+
+    margin: 140px 0 ;
+
+    ${SectionTitle} {
+        padding-bottom: 20px;
+    }
+
+    ${FlexWrapper} {
+        display: flex;
+        flex-direction: column;
+    }
+
+`
+
 const Text = styled.p`
-position: relative;
-    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.72px;
+    position: relative;
+
     &::before {
         content: "";
         position: absolute;
         display: inline-block;
-        width: 120px;
-        height: 5px;
-        left: -76.5px;
-        transform: rotate(-90deg);
+        width: 5px;
+        height: Calc(100% - 5px);
         border-radius: 2px;
-        background: #5222D0;
+        left: -17px;
+        background: ${Theme.colors.accent};
     }
-    
 `
