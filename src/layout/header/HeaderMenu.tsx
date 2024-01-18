@@ -32,7 +32,7 @@ export const StyledHeaderMenu = styled.nav`
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 45px;
+        gap: 25px;
     }
 
 `
