@@ -3,6 +3,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Button} from "../../../components/Button";
+import {Theme} from "../../../styles/Theme";
 
 export const Contacts: React.FC = () => {
     return (
@@ -25,7 +26,8 @@ export const Contacts: React.FC = () => {
 };
 
 const StyledContacts = styled.section`
-    min-height: 80vh;
+    min-height: 50vh;
+    margin-bottom: 190px;
 `
 
 const StyledForm = styled.form`
@@ -54,6 +56,6 @@ const StyledButton = styled.button`
     height: 48px;
     padding: 12px 20px;
     border-radius: 6px;
-    background: #5222D0;
-    color: #DBFFFF;
+    background-color: ${Theme.colors.accent};
+    color: ${Theme.colors.link};
 `
