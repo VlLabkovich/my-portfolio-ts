@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
+import {Theme} from "../../../../styles/Theme";
 
 type SkillPropsType = {
     iconId: string
@@ -29,5 +30,11 @@ const StyledSkill = styled.div`
 `
 
 const SkillTitle = styled.h3`
-
+    color: ${Theme.colors.text}
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.166px;
+    text-transform: uppercase;
 `
