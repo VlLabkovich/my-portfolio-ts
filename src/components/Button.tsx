@@ -9,18 +9,18 @@ export type ButtonPropsType = {
 export const Button = styled.button<ButtonPropsType>`
     text-align: center;
     font-size: inherit;
-    font-style: normal;
     font-weight: inherit;
     line-height: normal;
     position: relative;
     z-index: 0;
+    padding: 12px 20px;
 
 
     ${props => props.btnType === "primary" && css<ButtonPropsType>`
         &::before {
             content: "";
             display: inline-block;
-            height: 10px;
+            height: 7px;
             width: 50%;
             background-color: ${Theme.colors.accent};
             position: absolute;
@@ -34,13 +34,11 @@ export const Button = styled.button<ButtonPropsType>`
         &:hover {
             &:before {
                 display: inline-flex;
-                padding: 12px 20px;
                 height: 100%;
                 width: 100%;
                 border-radius: 6px;
                 justify-content: center;
                 align-items: center;
-                gap: 10px;
             }
 
             color: ${Theme.colors.link};
