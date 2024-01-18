@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {Menu} from "../../components/Menu";
+import {HeaderMenu} from "./HeaderMenu";
 
 const itemsHeader = [
     {
@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
-                    <Menu menuItems={itemsHeader}/>
+                    <HeaderMenu menuItems={itemsHeader}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
