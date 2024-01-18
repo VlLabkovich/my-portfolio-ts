@@ -30,5 +30,6 @@ const StyledFooterMenu = styled.nav`
         align-items: center;
         justify-content: center;
         gap: 48px;
+        padding: 49px 0;
     }
 `
