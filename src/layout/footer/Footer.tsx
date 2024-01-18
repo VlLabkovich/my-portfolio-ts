@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Icon} from "../../components/icon/Icon";
-import {Menu} from "../../components/Menu";
+import {FooterMenu} from "./FooterMenu";
 
 
 const itemsFooter = [
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
                             <StyledTitle>linkedin</StyledTitle>
                         </a>
                     </StyledFooterIcon>
-                    <Menu menuItems={itemsFooter}/>
+                    <FooterMenu menuItems={itemsFooter}/>
                     <Copyright>© 2024 Labkovich Vladislav, All Rights Reserved.</Copyright>
                 </FlexWrapper>
             </Container>
@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
 };
 
 const StyledFooter = styled.footer`
-    min-height: 30vh;
+    min-height: 20vh;
 
     a {
         text-decoration: none;
