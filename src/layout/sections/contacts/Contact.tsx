@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Button} from "../../../components/Button";
-import {Theme} from "../../../styles/Theme";
 
 export const Contacts: React.FC = () => {
     return (
@@ -11,14 +9,15 @@ export const Contacts: React.FC = () => {
             <Container>
                 <SectionTitle>Contact Me</SectionTitle>
                 <StyledForm>
-                    {/*<FlexWrapper direction={'column'} justify={'center'} align={'flex-start'}>*/}
-                        <label>Name</label>
-                        <StyledInput placeholder={'Example'}/>
-                        <label>Email</label>
-                        <StyledInput placeholder={'Value'}/>
-                        <label>Message</label>
-                        <StyledText placeholder={'Hi, i will ...'}/>
-                        <StyledButton type={'submit'}>Submit</StyledButton>
+                    <label>Name</label>
+                    <StyledInput placeholder={'Example'}/>
+                    <label>Email</label>
+                    <StyledInput placeholder={'Value'}/>
+                    <label>Message</label>
+                    <StyledText placeholder={'Hi, i will ...'}/>
+                    <StyledButton>
+                        <Button btnType={'secondary'} type={'submit'}>Submit</Button>
+                    </StyledButton>
                 </StyledForm>
             </Container>
         </StyledContacts>
@@ -48,14 +47,9 @@ const StyledText = styled.textarea`
     height: 165px;
 `
 
-const StyledButton = styled.button`
-    text-align: center;
-    margin-top: 22px;
-    max-width: 532px;
-    width: 100%;
-    height: 48px;
-    padding: 12px 20px;
-    border-radius: 6px;
-    background-color: ${Theme.colors.accent};
-    color: ${Theme.colors.link};
+const StyledButton = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 `
