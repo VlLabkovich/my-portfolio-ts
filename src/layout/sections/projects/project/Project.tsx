@@ -5,11 +5,8 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 type ProjectPropsType = {
     image: string
     title: string
-    tagFirst?: string
-    tagSecond?: string
-    tagThree?: string
-    tagFour?: string
-    text?: string
+    tags: Array<string>
+    text: string
 
 }
 
@@ -20,11 +17,11 @@ export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => 
                 <StyledProjectImg src={props.image}/>
                 <StyledContent>
                     <Title>{props.title}</Title>
-                    <StyledTags>
-                        <Tags>{props.tagFirst}</Tags>
-                        <Tags>{props.tagSecond}</Tags>
-                        <Tags>{props.tagThree}</Tags>
-                        <Tags>{props.tagFour}</Tags>
+                    <StyledTags>{props.tags.map((item, index) => {
+                        return <Tags key={index}>
+                            {item}
+                        </Tags>
+                    })}
                     </StyledTags>
                     <Text>{props.text}</Text>
                 </StyledContent>
