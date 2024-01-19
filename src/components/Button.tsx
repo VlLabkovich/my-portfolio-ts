@@ -7,20 +7,26 @@ export type ButtonPropsType = {
 }
 
 export const Button = styled.button<ButtonPropsType>`
-    text-align: center;
-    font-size: inherit;
-    font-weight: inherit;
+    //font-size: inherit;
+    //font-weight: inherit;
+    font-family: Montserrat, sans-serif;
     line-height: normal;
     position: relative;
     z-index: 0;
     padding: 12px 20px;
+    color: ${Theme.colors.link}
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+
+
 
 
     ${props => props.btnType === "primary" && css<ButtonPropsType>`
         &::before {
             content: "";
             display: inline-block;
-            height: 7px;
+            height: 6px;
             width: 50%;
             background-color: ${Theme.colors.accent};
             position: absolute;
@@ -28,7 +34,7 @@ export const Button = styled.button<ButtonPropsType>`
             left: 50%;
             transform: translateX(-50%);
             z-index: -1;
-            //border-radius: 6px;
+
         }
 
         &:hover {
@@ -47,7 +53,16 @@ export const Button = styled.button<ButtonPropsType>`
     }
 
     ${props => props.btnType === "secondary" && css<ButtonPropsType>`
-
+        text-align: center;
+        margin-top: 22px;
+        max-width: 532px;
+        width: 100%;
+        height: 48px;
+        padding: 12px 20px;
+        border-radius: 6px;
+        background-color: ${Theme.colors.accent};
+        color: ${Theme.colors.link};
+        
     `
     }
 `
