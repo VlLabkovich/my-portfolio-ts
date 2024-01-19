@@ -4,10 +4,42 @@ import styled from "styled-components";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Project} from "./project/Project";
-import ProjectOne from "../../../assets/images/social network.webp"
-import ProjectSecond from "../../../assets/images/sendpay.png"
-import ProjectThree from "../../../assets/images/e-commerce.png"
-import ProjectFour from "../../../assets/images/beats lerning.png"
+import socialImg from "../../../assets/images/social network.webp"
+import sendPayImg from "../../../assets/images/sendpay.png"
+import ecommerceImg from "../../../assets/images/e-commerce.png"
+import beatsLerningImg from "../../../assets/images/beats lerning.png"
+
+
+const workProjects = [
+    {
+        src: socialImg,
+        title: 'Social Network',
+        tags: ['JavaScript', 'PostgreSQL', 'React', 'redux'],
+        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+
+    },
+    {
+        src: sendPayImg,
+        title: 'SendPay Platform',
+        tags: ['JavaScript', 'Redux'],
+        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+
+    },
+    {
+        src: ecommerceImg,
+        title: 'E-commerce',
+        tags: ['JavaScript', 'Redux', 'Redis'],
+        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+
+    },
+    {
+        src: beatsLerningImg,
+        title: 'Beats Lerning',
+        tags: ['JavaScript', 'TypeScript', 'Redux', 'MongoDB'],
+        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+
+    },
+];
 
 export const Projects: React.FC = () => {
     return (
@@ -15,10 +47,13 @@ export const Projects: React.FC = () => {
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <FlexWrapper wrap={'wrap'} gap={'27px'} justify={'center'}>
-                    <Project image={ProjectOne} title={'Social Network'} tagFirst={'JavaScript'} tagSecond={'PostgreSQL'} tagThree={'React'} tagFour={'redux'} text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'} />
-                    <Project image={ProjectSecond} title={'SendPay Platform'} tagFirst={'JavaScript'} tagSecond={'React Native'} tagThree={'Redux'} text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'} />
-                    <Project image={ProjectThree} title={'E-commerce'} tagFirst={'JavaScript'} tagSecond={'React Native'} tagThree={'PostgreSQL'} text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'} />
-                    <Project image={ProjectFour} title={'BeatsLerning'} tagFirst={'JavaScript'} tagSecond={'React Native'} tagThree={'redux'} text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'} />
+                    {workProjects.map((w) => {
+                        return <Project image={w.src}
+                                        title={w.title}
+                                        tags={w.tags}
+                                        text={w.text}
+                        />
+                    })}
                 </FlexWrapper>
             </Container>
         </StyledProjects>
@@ -28,6 +63,7 @@ export const Projects: React.FC = () => {
 const StyledProjects = styled.section`
     min-height: 100vh;
     margin: 140px 0;
+
     ${SectionTitle} {
         margin-bottom: 32px;
     }
