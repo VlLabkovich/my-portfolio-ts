@@ -46,7 +46,7 @@ export const Projects: React.FC = () => {
         <StyledProjects>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
-                <FlexWrapper wrap={'wrap'} gap={'27px'} justify={'center'}>
+                <FlexWrapper wrap={'wrap'} rowGap={'43px'} columnGap={'27px'} justify={'center'}>
                     {workProjects.map((w) => {
                         return <Project image={w.src}
                                         title={w.title}
@@ -61,6 +61,5 @@ export const Projects: React.FC = () => {
 };
 
 const StyledProjects = styled.section`
-    min-height: 100vh;
-    margin: 140px 0;
+    margin-bottom: 140px;
 `
