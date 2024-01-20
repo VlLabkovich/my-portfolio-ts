@@ -14,7 +14,7 @@ export const Button = styled.button<ButtonPropsType>`
     position: relative;
     z-index: 0;
     padding: 12px 20px;
-    color: ${Theme.colors.link}
+    color: ${Theme.colors.link};
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -23,6 +23,7 @@ export const Button = styled.button<ButtonPropsType>`
 
 
     ${props => props.btnType === "primary" && css<ButtonPropsType>`
+        
         &::before {
             content: "";
             display: inline-block;
@@ -47,7 +48,7 @@ export const Button = styled.button<ButtonPropsType>`
                 align-items: center;
             }
 
-            color: ${Theme.colors.link};
+            color: ${Theme.colors.link_hover};
         }
     `
     }
@@ -61,8 +62,7 @@ export const Button = styled.button<ButtonPropsType>`
         padding: 12px 20px;
         border-radius: 6px;
         background-color: ${Theme.colors.accent};
-        color: ${Theme.colors.link};
-        
+        color: ${Theme.colors.link_hover};
     `
     }
 `
