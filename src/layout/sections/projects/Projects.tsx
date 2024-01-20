@@ -14,29 +14,29 @@ const workProjects = [
     {
         src: socialImg,
         title: 'Social Network',
-        tags: ['JavaScript', 'PostgreSQL', 'React', 'redux'],
-        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+        tags: ['JavaScript', 'PostgreSQL', 'React', 'Redux'],
+        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
 
     },
     {
         src: sendPayImg,
         title: 'SendPay Platform',
         tags: ['JavaScript', 'Redux'],
-        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
 
     },
     {
         src: ecommerceImg,
         title: 'E-commerce',
         tags: ['JavaScript', 'Redux', 'Redis'],
-        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+        text: 'Mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
 
     },
     {
         src: beatsLerningImg,
         title: 'Beats Lerning',
         tags: ['JavaScript', 'TypeScript', 'Redux', 'MongoDB'],
-        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+        text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
 
     },
 ];
