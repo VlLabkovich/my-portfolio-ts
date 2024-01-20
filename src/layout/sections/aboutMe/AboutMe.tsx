@@ -11,12 +11,15 @@ export const AboutMe: React.FC = () => {
 
             <Container>
                 <StyledContent>
-                    <FlexWrapper>
+                    <FlexWrapper direction={'column'}>
                         <SectionTitle>About Me</SectionTitle>
-                        <Text>The long barrow was built on land previously inhabited in the Mesolithic period. It consisted
-                            of a sub-rectangular earthen tumulus, estimated to have been 15 metres (50 feet) in length, with
+                        <Text>The long barrow was built on land previously inhabited in the Mesolithic period. It
+                            consisted
+                            of a sub-rectangular earthen tumulus, estimated to have been 15 metres (50 feet) in length,
+                            with
                             a chamber built from sarsen megaliths on its eastern end. Both inhumed and cremated human
-                            remains were placed within this chamber during the Neolithic period, representing at least nine
+                            remains were placed within this chamber during the Neolithic period, representing at least
+                            nine
                             or ten individuals.</Text>
                     </FlexWrapper>
                 </StyledContent>
@@ -27,22 +30,17 @@ export const AboutMe: React.FC = () => {
 };
 
 const StyledAboutMe = styled.section`
-min-height: 50vh;
+    min-height: 50vh;
 `
 
 const StyledContent = styled.div`
-    width: 843px;
-    min-height: 123px;
+    max-width: 843px;
+    width: 100%;
 
-    margin: 140px 0 ;
+    margin: 140px 0;
 
     ${SectionTitle} {
         padding-bottom: 20px;
-    }
-
-    ${FlexWrapper} {
-        display: flex;
-        flex-direction: column;
     }
 
 `
