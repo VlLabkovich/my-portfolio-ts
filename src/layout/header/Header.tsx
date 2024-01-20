@@ -9,11 +9,11 @@ const itemsHeader = [
     {
         text: 'Skills',
         href: '#',
-        btnType: 'secondary'
+        btnType: '#'
     }, {
         text: 'Projects',
         href: '#',
-        btnType: 'secondary'
+        btnType: '#'
     }, {
         text: 'Contact',
         href: '#',
