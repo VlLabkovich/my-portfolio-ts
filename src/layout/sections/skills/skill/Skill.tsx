@@ -16,7 +16,7 @@ type SkillPropsType = {
 export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
     return (
         <StyledSkill>
-            <FlexWrapper direction={'column'} align={'center'} gap={'10px'}>
+            <FlexWrapper direction={'column'} align={'center'} gap={'20px'}>
                 <Icon iconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox}/>
                 <SkillTitle>{props.title}</SkillTitle>
             </FlexWrapper>
@@ -25,8 +25,8 @@ export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-    width: 10%;
-    height: 155px;
+    width: 120px;
+    height: 164px;
 `
 
 const SkillTitle = styled.h3`
@@ -37,4 +37,5 @@ const SkillTitle = styled.h3`
     line-height: normal;
     letter-spacing: 2.166px;
     text-transform: uppercase;
+    white-space: pre-wrap;
 `
