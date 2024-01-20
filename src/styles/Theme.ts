@@ -3,7 +3,11 @@ export const Theme = {
         accent: '#5222D0',
         font: '#151717',
         text: '#1F2626',
-        link: '#DBFFFF',
+        link: '#1F2626',
+        first_input: '#919B9B',
+        font_input: '#919B9B',
+        border_input: '#534084',
+        link_hover: '#DBFFFF',
         bgCard: '#F5F2FD'
     }
 }
