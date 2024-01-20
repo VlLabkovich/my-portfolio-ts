@@ -36,13 +36,7 @@ const StyledAboutMe = styled.section`
 const StyledContent = styled.div`
     max-width: 843px;
     width: 100%;
-
     margin: 140px 0;
-
-    ${SectionTitle} {
-        padding-bottom: 20px;
-    }
-
 `
 
 const Text = styled.p`
@@ -60,6 +54,6 @@ const Text = styled.p`
         height: Calc(100% - 5px);
         border-radius: 2px;
         left: -17px;
-        background: ${Theme.colors.accent};
+        background-color: ${Theme.colors.accent};
     }
 `
