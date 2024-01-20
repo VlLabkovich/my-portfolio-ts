@@ -9,5 +9,11 @@ export const Theme = {
         border_input: '#534084',
         link_hover: '#DBFFFF',
         bgCard: '#F5F2FD'
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
+        desktop: "screen and (min-width: 1140px )"
     }
 }
