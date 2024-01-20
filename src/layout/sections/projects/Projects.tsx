@@ -43,7 +43,7 @@ const workProjects = [
 
 export const Projects: React.FC = () => {
     return (
-        <StyledProjects>
+        <StyledProjects id="projects">
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <FlexWrapper wrap={'wrap'} rowGap={'43px'} columnGap={'27px'} justify={'center'}>

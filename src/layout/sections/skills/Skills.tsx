@@ -8,7 +8,7 @@ import {Theme} from "../../../styles/Theme";
 
 export const Skills: React.FC = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id="skills">
             <Container>
                 <SectionTitle>Tech Skills</SectionTitle>
                 <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'} gap={'120px'}>

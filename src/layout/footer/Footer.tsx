@@ -20,7 +20,7 @@ const itemsFooter = [
 
 export const Footer: React.FC = () => {
     return (
-        <StyledFooter>
+        <StyledFooter id="footer">
             <Container>
                 <FlexWrapper direction={'column'} align={'center'} justify={'center'}>
                     <StyledFooterIcon>
