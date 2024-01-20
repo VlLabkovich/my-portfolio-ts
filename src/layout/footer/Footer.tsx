@@ -6,7 +6,6 @@ import {Icon} from "../../components/icon/Icon";
 import {FooterMenu} from "./FooterMenu";
 import {Theme} from "../../styles/Theme";
 
-
 const itemsFooter = [
     {
         text: 'Projects',
@@ -30,11 +29,12 @@ export const Footer: React.FC = () => {
                             <StyledTitle>gmail</StyledTitle>
                         </a>
 
-                        <a href="">
+                        <a href="https://linkedin.com/in/vladislav-labkovich"
+                           title={'vladislav-labkovich'}>
                             <Icon iconId={'linkedin'} width={'39'} height={'38'} viewBox={'0 0 39 38'}/>
                             <StyledTitle>linkedin</StyledTitle>
                         </a>
-                        <a href="">
+                        <a href="https://github.com/VlLabkovich" title={'VlLabkovich'}>
                             <Icon iconId={'github'} width={'39'} height={'38'} viewBox={'0 0 39 38'}/>
                             <StyledTitle>github</StyledTitle>
                         </a>
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
 };
 
 const StyledFooter = styled.footer`
-    min-height: 30vh;
+    margin-bottom: 100px;
 
     span {
         display: block;
