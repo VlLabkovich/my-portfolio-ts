@@ -43,12 +43,4 @@ export const Skills: React.FC = () => {
 
 const StyledSkills = styled.section`
     min-height: 50vh;
-    ${SectionTitle} {
-        color: ${Theme.colors.font};
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 26px; /* 108.333% */
-        letter-spacing: 0.96px;
-        margin-bottom: 18px;
-}
 `
