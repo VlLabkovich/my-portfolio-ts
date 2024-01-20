@@ -14,26 +14,27 @@ export type MenuPropsType = {
 export const HeaderMenu = (props: MenuPropsType) => {
     return (
         <StyledHeaderMenu>
-            <ul>
+            <ListMenu>
                 {props.menuItems.map((item, index) => {
-                    return <li key={index} >
-                        {/*<a href={item.href}>{item.text}</a>*/}
+                    return <ListItems key={index} >
                         <Button btnType={item.btnType} as={"a"} href={item.href}>{item.text}</Button>
-                    </li>
+                    </ListItems>
                 })}
-            </ul>
+            </ListMenu>
         </StyledHeaderMenu>
-
     )
 };
 
 export const StyledHeaderMenu = styled.nav`
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 25px;
-    }
+`
 
+const ListMenu = styled.ul`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+`
+
+const ListItems = styled.li`
 `
 
