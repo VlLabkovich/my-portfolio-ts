@@ -18,11 +18,11 @@ export const Main: React.FC = () => {
                         <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line
                             of code at a time.
                         </Text>
-                        <Button as={"a"} btnType={'primary'} href={'#'}>Contact Me</Button>
+                        <Button as={"a"} btnType={'primary'} href={'#contacts'} title={'labkovich.vl@gmail.com'}>Contact Me</Button>
                     </MainContent>
                     <Photo src={photo}></Photo>
                     <StyledScrollLink>
-                        <a href="#">
+                        <a href="#footer">
                             <Icon iconId={'scroll'} width="32" height="32" viewBox="0 0 32 32"/>
                         </a>
                     </StyledScrollLink>

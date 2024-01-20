@@ -8,15 +8,15 @@ import {HeaderMenu} from "./HeaderMenu";
 const itemsHeader = [
     {
         text: 'Skills',
-        href: '#',
+        href: '#skills',
         btnType: '#'
     }, {
         text: 'Projects',
-        href: '#',
+        href: '#projects',
         btnType: '#'
     }, {
         text: 'Contact',
-        href: '#',
+        href: '#contacts',
         btnType: 'primary'
     },
 ];
