@@ -18,7 +18,7 @@ export const Main: React.FC = () => {
                         <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line
                             of code at a time.
                         </Text>
-                        <Button btnType={'primary'} type={'submit'}>Contact Me</Button>
+                        <Button as={"a"} btnType={'primary'} href={'#'}>Contact Me</Button>
                     </MainContent>
                     <Photo src={photo}></Photo>
                     <StyledScrollLink>
@@ -37,7 +37,7 @@ const StyledMain = styled.div`
 `
 
 const MainContent = styled.div`
-    width: 520px;
+    max-width: 520px;
     height: 278px;
     margin-top: 40px;
     //outline: 3px solid red;
