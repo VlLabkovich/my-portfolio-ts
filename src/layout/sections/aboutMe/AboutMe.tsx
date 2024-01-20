@@ -30,13 +30,11 @@ export const AboutMe: React.FC = () => {
 };
 
 const StyledAboutMe = styled.section`
-    min-height: 50vh;
 `
 
 const StyledContent = styled.div`
     max-width: 843px;
     width: 100%;
-    margin: 140px 0;
 `
 
 const Text = styled.p`
