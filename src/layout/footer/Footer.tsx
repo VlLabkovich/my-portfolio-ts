@@ -11,11 +11,11 @@ const itemsFooter = [
     {
         text: 'Projects',
         href: '#',
-        btnType: 'secondary'
+        btnType: '#'
     }, {
         text: 'Contact',
         href: '#',
-        btnType: 'secondary'
+        btnType: '#'
     },
 ];
 
