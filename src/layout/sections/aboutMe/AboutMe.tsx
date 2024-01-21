@@ -30,6 +30,11 @@ export const AboutMe: React.FC = () => {
 };
 
 const StyledAboutMe = styled.section`
+    margin-top: 356px;
+    
+    @media ${Theme.media.tablet} {
+        margin-top: 72px;
+    }
 `
 
 const StyledContent = styled.div`

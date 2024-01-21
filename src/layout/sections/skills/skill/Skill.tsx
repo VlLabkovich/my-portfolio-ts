@@ -27,6 +27,11 @@ export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
 const StyledSkill = styled.div`
     width: 120px;
     height: 164px;
+
+    @media ${Theme.media.mobile} {
+        width: 80px;
+        height: 120px;
+    }
 `
 
 const SkillTitle = styled.h3`
@@ -38,4 +43,9 @@ const SkillTitle = styled.h3`
     letter-spacing: 2.166px;
     text-transform: uppercase;
     white-space: pre-wrap;
+    
+    @media ${Theme.media.mobile} {
+        font-size: 12px;
+        letter-spacing: 1.6px;
+    }
 `

@@ -8,6 +8,7 @@ import socialImg from "../../../assets/images/social network.webp"
 import sendPayImg from "../../../assets/images/sendpay.png"
 import ecommerceImg from "../../../assets/images/e-commerce.png"
 import beatsLerningImg from "../../../assets/images/beats lerning.png"
+import {Theme} from "../../../styles/Theme";
 
 
 const workProjects = [
@@ -62,4 +63,10 @@ export const Projects: React.FC = () => {
 
 const StyledProjects = styled.section`
     margin-bottom: 140px;
+
+    @media ${Theme.media.mobile} {
+        ${FlexWrapper} {
+            row-gap: 16px;
+        }
+    }
 `
