@@ -4,6 +4,7 @@ import {Logo} from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./HeaderMenu";
+import {Theme} from "../../styles/Theme";
 
 const itemsHeader = [
     {
@@ -37,4 +38,7 @@ export const Header: React.FC = () => {
 const StyledHeader = styled.header`
     display: flex;
     min-height: 100px;
+    @media ${Theme.media.mobile} {
+        gap: 0;
+    }
 `
