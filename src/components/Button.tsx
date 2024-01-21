@@ -19,11 +19,11 @@ export const Button = styled.button<ButtonPropsType>`
     font-size: 16px;
     font-weight: 500;
 
-
-
-
+    @media ${Theme.media.mobile} {
+        font-size: 15px;
+    }
+    
     ${props => props.btnType === "primary" && css<ButtonPropsType>`
-        
         &::before {
             content: "";
             display: inline-block;
