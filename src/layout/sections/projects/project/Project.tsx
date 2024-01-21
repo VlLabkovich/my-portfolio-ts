@@ -36,7 +36,6 @@ const StyledProject = styled.div`
     height: 636px;
     box-shadow: 2px 2px 32px 0 rgba(40, 38, 44, 0.15);
     border-radius: 6px;
-    //background-color: ${Theme.colors.bgCard};
 `
 
 const StyledProjectImg = styled.img`
