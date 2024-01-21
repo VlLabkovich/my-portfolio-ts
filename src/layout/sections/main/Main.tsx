@@ -33,14 +33,45 @@ export const Main: React.FC = () => {
 };
 
 const StyledMain = styled.div`
-    min-height: 100vh;
+
+    @media ${Theme.media.tablet} {
+
+        ${FlexWrapper} {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+
+
+        @media ${Theme.media.mobile} {
+
+        ${FlexWrapper} {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+
+    }
 `
 
 const MainContent = styled.div`
     max-width: 520px;
-    height: 278px;
+    width: 100%;
+    min-height: 278px;
     margin-top: 40px;
     //outline: 3px solid red;
+
+    @media ${Theme.media.tablet} {
+        max-width: 329px;
+        text-align: center;
+    }
+
+    @media ${Theme.media.mobile} {
+        max-width: 329px;
+        text-align: center;
+        margin-top: 0;
+    }
+
 `
 
 const MainTitle = styled.h1`
@@ -49,7 +80,18 @@ const MainTitle = styled.h1`
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
-    padding: 0 253px 10px 6px;
+    margin: 0 253px 10px 6px;
+    white-space: nowrap;
+
+    @media ${Theme.media.tablet} {
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    @media ${Theme.media.mobile} {
+        text-align: center;
+        margin-top: 63px;
+    }
 `
 
 const Name = styled.h2`
@@ -57,15 +99,46 @@ const Name = styled.h2`
     font-size: 62px;
     font-weight: 600;
     line-height: normal;
+
+    @media ${Theme.media.tablet} {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    @media ${Theme.media.mobile} {
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+        margin: 12px 0 16px;
+    }
 `
 
 const Text = styled.p`
-    color:  ${Theme.colors.text};
+    max-width: 520px;
+    color: ${Theme.colors.text};
     font-size: 16px;
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.64px;
-    padding: 11px 0 29px 6px;
+    margin: 11px 0 41px 6px;
+
+    @media ${Theme.media.tablet} {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 28px 0;
+    }
+
+    @media ${Theme.media.mobile} {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 28px 0;
+    }
 `
 
 const Photo = styled.img`
@@ -74,9 +147,17 @@ const Photo = styled.img`
     object-fit: cover;
     border-radius: 10px;
     margin-top: 40px;
+
+    @media ${Theme.media.mobile} {
+        margin-top: 29px;
+    }
 `
 const StyledScrollLink = styled.a`
     position: absolute;
-    top: 92%;
+    top: 90%;
     left: 50%;
+
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
 `
