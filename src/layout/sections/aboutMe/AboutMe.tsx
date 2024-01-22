@@ -40,17 +40,12 @@ const StyledContent = styled.div`
     max-width: 843px;
     margin-left: 17px;
 
-    @media ${Theme.media.tablet} {
-        margin-left: 17px;
-    }
+
 
     @media ${Theme.media.desktop} {
         margin-left: 17px;
     }
-    @media ${Theme.media.mobile} {
-        width: 342px;
-        margin-left: 17px;
-    }
+
 `
 
 const Text = styled.p`
