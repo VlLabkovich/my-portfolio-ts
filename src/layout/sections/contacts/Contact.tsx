@@ -16,7 +16,7 @@ export const Contacts: React.FC = () => {
                     <StyledInput placeholder={'Value'}/>
                     <span>Message</span>
                     <StyledText placeholder={'Hi, i will ...'} as={'textarea'}/>
-                    <Button btnType={'secondary'} type={'submit'}>Submit</Button>
+                    <Button width={'532px'} height={'48px'} padding={'12px 20px'} btnType={'secondary'} type={'submit'} marginTop={'22px'}>Submit</Button>
                 </StyledForm>
             </Container>
         </StyledContacts>
