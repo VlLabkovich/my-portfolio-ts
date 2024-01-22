@@ -9,6 +9,7 @@ import sendPayImg from "../../../assets/images/sendpay.png"
 import ecommerceImg from "../../../assets/images/e-commerce.png"
 import beatsLerningImg from "../../../assets/images/beats lerning.png"
 import {Theme} from "../../../styles/Theme";
+import {Button} from "../../../components/Button";
 
 
 const workProjects = [
@@ -44,10 +45,10 @@ const workProjects = [
 
 export const Projects: React.FC = () => {
     return (
-        <StyledProjects id="projects">
+        <StyledProjectsContent id="projects">
             <Container>
                 <SectionTitle>Projects</SectionTitle>
-                <FlexWrapper wrap={'wrap'} rowGap={'43px'} columnGap={'27px'} justify={'center'}>
+                <StyledContent>
                     {workProjects.map((w) => {
                         return <Project image={w.src}
                                         title={w.title}
@@ -55,18 +56,38 @@ export const Projects: React.FC = () => {
                                         text={w.text}
                         />
                     })}
-                </FlexWrapper>
+
+                    <Button width={'305px'} height={'56px'} padding={'12px 20px 13px 20px'} marginTop={'20px'}
+                            btnType={'secondary'} as={'a'} type={'button'}>SEE ALL PROJECTS</Button>
+                </StyledContent>
             </Container>
-        </StyledProjects>
+        </StyledProjectsContent>
     );
 };
 
-const StyledProjects = styled.section`
+const StyledProjectsContent = styled.section`
     margin-bottom: 140px;
+`
+
+const StyledContent = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 43px;
+    column-gap: 27px;
 
     @media ${Theme.media.mobile} {
-        ${FlexWrapper} {
-            row-gap: 16px;
+        row-gap: 16px;
+        column-gap: 0;
+    }
+
+    ${Button} {
+        display: none;
+
+        @media ${Theme.media.mobile} {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 `
