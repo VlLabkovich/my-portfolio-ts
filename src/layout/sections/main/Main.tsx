@@ -149,15 +149,19 @@ const Photo = styled.img`
     margin-top: 40px;
 
     @media ${Theme.media.mobile} {
+        width: unset;
         margin-top: 29px;
     }
 `
 const StyledScrollLink = styled.a`
     position: absolute;
-    top: 90%;
+    margin-top: 560px;
     left: 50%;
-
+    
     @media ${Theme.media.tablet} {
+        display: none;
+    }
+    @media ${Theme.media.desktop} {
         display: none;
     }
 `

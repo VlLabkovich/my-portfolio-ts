@@ -8,7 +8,6 @@ import {Theme} from "../../../styles/Theme";
 export const AboutMe: React.FC = () => {
     return (
         <StyledAboutMe>
-
             <Container>
                 <StyledContent>
                     <FlexWrapper direction={'column'}>
@@ -32,14 +31,26 @@ export const AboutMe: React.FC = () => {
 const StyledAboutMe = styled.section`
     margin-top: 356px;
     
-    @media ${Theme.media.tablet} {
-        margin-top: 72px;
+    @media ${Theme.media.mobile} {
+        margin-top: 85px;
     }
 `
 
 const StyledContent = styled.div`
     max-width: 843px;
-    width: 100%;
+    margin-left: 17px;
+
+    @media ${Theme.media.tablet} {
+        margin-left: 17px;
+    }
+
+    @media ${Theme.media.desktop} {
+        margin-left: 17px;
+    }
+    @media ${Theme.media.mobile} {
+        width: 342px;
+        margin-left: 17px;
+    }
 `
 
 const Text = styled.p`
@@ -58,5 +69,4 @@ const Text = styled.p`
         border-radius: 2px;
         left: -17px;
         background-color: ${Theme.colors.accent};
-    }
 `

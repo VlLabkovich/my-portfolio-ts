@@ -36,6 +36,11 @@ const StyledProject = styled.div`
     height: 636px;
     box-shadow: 2px 2px 32px 0 rgba(40, 38, 44, 0.15);
     border-radius: 6px;
+
+    @media ${Theme.media.mobile} {
+        max-width: 363px;
+        height: 574px;
+    }
 `
 
 const StyledProjectImg = styled.img`
@@ -47,8 +52,11 @@ const StyledProjectImg = styled.img`
 const Title = styled.h3``
 
 const StyledContent = styled.div`
-    //outline: 3px dashed grey;
     margin: 29px 9px 32px 26px;
+
+    @media ${Theme.media.mobile} {
+        margin: 16px 7px 19px 18px;
+    }
 `
 
 const StyledTags = styled.div`
