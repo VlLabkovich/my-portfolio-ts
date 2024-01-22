@@ -8,6 +8,7 @@ export type MenuPropsType = {
         text: string
         href: string
         btnType: string
+        fontSize?: string
     }>
 }
 
@@ -18,7 +19,7 @@ export const HeaderMenu = (props: MenuPropsType) => {
             <ListMenu>
                 {props.menuItems.map((item, index) => {
                     return <ListItems key={index}>
-                        <Button btnType={item.btnType} as={"a"} href={item.href}>{item.text}</Button>
+                        <Button fontSize={'15px'} btnType={item.btnType} as={"a"} href={item.href}>{item.text}</Button>
                     </ListItems>
                 })}
             </ListMenu>
