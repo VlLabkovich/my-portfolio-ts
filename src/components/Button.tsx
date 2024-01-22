@@ -4,6 +4,10 @@ import {Theme} from "../styles/Theme";
 
 export type ButtonPropsType = {
     btnType: string
+    width?: string
+    height?: string
+    padding?: string
+    marginTop?: string
 }
 
 export const Button = styled.button<ButtonPropsType>`
@@ -55,11 +59,11 @@ export const Button = styled.button<ButtonPropsType>`
 
     ${props => props.btnType === "secondary" && css<ButtonPropsType>`
         text-align: center;
-        margin-top: 22px;
-        max-width: 532px;
+        margin-top: ${props => props.marginTop};
+        max-width: ${props => props.width};
         width: 100%;
-        height: 48px;
-        padding: 12px 20px;
+        height: ${props => props.height};
+        padding: ${props => props.padding}; 
         border-radius: 6px;
         background-color: ${Theme.colors.accent};
         color: ${Theme.colors.link_hover};
