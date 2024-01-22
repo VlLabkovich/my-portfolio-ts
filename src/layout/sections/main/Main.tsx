@@ -120,7 +120,7 @@ const Text = styled.p`
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.64px;
-    margin: 11px 0 41px 6px;
+    margin: 11px 0 29px 6px;
 
     @media ${Theme.media.tablet} {
         text-align: center;
@@ -128,7 +128,7 @@ const Text = styled.p`
         align-items: center;
         max-width: 100%;
         height: auto;
-        margin: 0 0 28px 0;
+        margin: 0 0 16px 0;
     }
 
     @media ${Theme.media.mobile} {
@@ -137,7 +137,7 @@ const Text = styled.p`
         align-items: center;
         max-width: 100%;
         height: auto;
-        margin: 0 0 28px 0;
+        margin: 0 0 16px 0;
     }
 `
 
@@ -158,9 +158,6 @@ const StyledScrollLink = styled.a`
     margin-top: 560px;
     left: 50%;
     
-    @media ${Theme.media.tablet} {
-        display: none;
-    }
     @media ${Theme.media.desktop} {
         display: none;
     }
