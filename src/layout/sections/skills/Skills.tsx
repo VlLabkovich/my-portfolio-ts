@@ -28,8 +28,9 @@ export const Skills: React.FC = () => {
 };
 
 const StyledSkillsContent = styled.section`
+    position: relative;
+
     margin: 140px 0;
-    
     ${FlexWrapper} {
         row-gap: 59px;
         column-gap: 120px;

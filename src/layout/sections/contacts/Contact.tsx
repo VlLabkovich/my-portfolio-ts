@@ -24,6 +24,8 @@ export const Contacts: React.FC = () => {
 };
 
 const StyledContacts = styled.section`
+    position: relative;
+
     margin-bottom: 190px;
 `
 

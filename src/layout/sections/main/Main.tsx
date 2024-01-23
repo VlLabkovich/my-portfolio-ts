@@ -50,6 +50,7 @@ export const Main: React.FC = () => {
 };
 
 const StyledMain = styled.div`
+    position: relative;
 
     @media ${Theme.media.tablet} {
 

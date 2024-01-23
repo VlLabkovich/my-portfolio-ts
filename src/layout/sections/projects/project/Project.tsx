@@ -32,6 +32,8 @@ export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => 
 };
 
 const StyledProject = styled.div`
+    background-color: white;
+    position: relative;
     max-width: 522px;
     height: 636px;
     box-shadow: 2px 2px 32px 0 rgba(40, 38, 44, 0.15);

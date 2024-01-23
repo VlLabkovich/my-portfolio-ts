@@ -29,6 +29,8 @@ export const AboutMe: React.FC = () => {
 };
 
 const StyledAboutMe = styled.section`
+    position: relative;
+
     margin-top: 356px;
     
     @media ${Theme.media.mobile} {
