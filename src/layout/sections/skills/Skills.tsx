@@ -13,8 +13,9 @@ export const Skills: React.FC = () => {
         <StyledSkillsContent id="skills">
             <Container>
                 <SectionTitle>Tech Skills</SectionTitle>
-                <Fade>
+
                     <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'} >
+                        <Fade cascade={true}>
                         {skillData.map((s) => {
                             return <Skill iconId={s.iconId}
                                           title={s.title}
@@ -23,8 +24,9 @@ export const Skills: React.FC = () => {
                                           viewBox={s.viewBox}
                             />
                         })}
+                        </Fade>
                     </FlexWrapper>
-                </Fade>
+
             </Container>
         </StyledSkillsContent>
     );
