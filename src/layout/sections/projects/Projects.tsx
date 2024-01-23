@@ -22,11 +22,11 @@ export const Projects: React.FC = () => {
                 <SectionTitle>Projects</SectionTitle>
                 {/*<FlexWrapper justify={'center'} wrap={'wrap'}>*/}
                 <StyledContent>
-                    {projectsToShow.map((w) => {
-                        return <Project image={w.src}
-                                        title={w.title}
-                                        tags={w.tags}
-                                        text={w.text}
+                    {projectsToShow.map((p) => {
+                        return <Project image={p.src}
+                                        title={p.title}
+                                        tags={p.tags}
+                                        text={p.text}
                         />
                     })}
                 </StyledContent>
@@ -46,7 +46,7 @@ export const Projects: React.FC = () => {
 };
 
 const StyledProjectsContent = styled.section`
-    
+    position: relative;
     ${Button} {
         margin: 36px auto 140px;
 
