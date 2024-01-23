@@ -15,7 +15,7 @@ export const Skills: React.FC = () => {
                 <SectionTitle>Tech Skills</SectionTitle>
 
                     <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'} >
-                        <Fade cascade={true}>
+                        <Fade cascade={true} damping={0.2}>
                         {skillData.map((s) => {
                             return <Skill iconId={s.iconId}
                                           title={s.title}
