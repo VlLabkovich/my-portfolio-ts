@@ -5,23 +5,26 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Skill} from "./skill/Skill";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Theme} from "../../../styles/Theme";
-import {skillData} from "./skill/SkillData";
+import {skillData} from "./SkillData";
+import { Fade } from "react-awesome-reveal";
 
 export const Skills: React.FC = () => {
     return (
         <StyledSkillsContent id="skills">
             <Container>
                 <SectionTitle>Tech Skills</SectionTitle>
-                <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'} >
-                    {skillData.map((s) => {
-                        return <Skill iconId={s.iconId}
-                                      title={s.title}
-                                      width={s.width}
-                                      height={s.height}
-                                      viewBox={s.viewBox}
-                        />
-                    })}
-                </FlexWrapper>
+                <Fade>
+                    <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'} >
+                        {skillData.map((s) => {
+                            return <Skill iconId={s.iconId}
+                                          title={s.title}
+                                          width={s.width}
+                                          height={s.height}
+                                          viewBox={s.viewBox}
+                            />
+                        })}
+                    </FlexWrapper>
+                </Fade>
             </Container>
         </StyledSkillsContent>
     );
