@@ -6,6 +6,7 @@ import {Container} from "../../../components/Container";
 import {Icon} from "../../../components/icon/Icon";
 import {Button} from "../../../components/Button";
 import {Theme} from "../../../styles/Theme";
+import Typewriter from 'typewriter-effect';
 
 export const Main: React.FC = () => {
     return (
@@ -13,12 +14,22 @@ export const Main: React.FC = () => {
             <Container>
                 <FlexWrapper justify={'space-between'} wrap={'wrap'}>
                     <MainContent>
-                        <MainTitle>FRONT-END DEVELOPER</MainTitle>
+                        <MainTitle>
+                            <p>FRONT-END DEVELOPER</p>
+                            <Typewriter
+                                options={{
+                                    strings: ['FRONT-END DEVELOPER','WEB-DEVELOPER','REACT DEVELOPER',],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </MainTitle>
                         <Name>Vladislav Labkovich</Name>
                         <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line
                             of code at a time.
                         </Text>
-                        <Button as={"a"} btnType={'primary'} href={'#contacts'} title={'labkovich.vl@gmail.com'}>Contact Me</Button>
+                        <Button as={"a"} btnType={'primary'} href={'#contacts'} title={'labkovich.vl@gmail.com'}>Contact
+                            Me</Button>
                     </MainContent>
                     <Photo src={photo}></Photo>
                     <StyledScrollLink>
@@ -45,13 +56,13 @@ const StyledMain = styled.div`
 
         @media ${Theme.media.mobile} {
 
-        ${FlexWrapper} {
-            justify-content: center;
-            align-items: center;
-            flex-direction: column-reverse;
-        }
+            ${FlexWrapper} {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column-reverse;
+            }
 
-    }
+        }
 `
 
 const MainContent = styled.div`
@@ -83,6 +94,10 @@ const MainTitle = styled.h1`
     margin: 0 253px 10px 6px;
     white-space: nowrap;
 
+    p {
+        display: none;
+    }
+    
     @media ${Theme.media.tablet} {
         text-align: center;
         margin: 0 0 10px 0;
@@ -157,7 +172,7 @@ const StyledScrollLink = styled.a`
     position: absolute;
     margin-top: 560px;
     left: 50%;
-    
+
     @media ${Theme.media.desktop} {
         display: none;
     }
