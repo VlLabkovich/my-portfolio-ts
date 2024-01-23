@@ -7,6 +7,7 @@ import {Icon} from "../../../components/icon/Icon";
 import {Button} from "../../../components/Button";
 import {Theme} from "../../../styles/Theme";
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 export const Main: React.FC = () => {
     return (
@@ -18,7 +19,7 @@ export const Main: React.FC = () => {
                             <p>FRONT-END DEVELOPER</p>
                             <Typewriter
                                 options={{
-                                    strings: ['FRONT-END DEVELOPER','WEB-DEVELOPER','REACT DEVELOPER',],
+                                    strings: ['FRONT-END DEVELOPER', 'WEB-DEVELOPER', 'REACT DEVELOPER',],
                                     autoStart: true,
                                     loop: true,
                                 }}
@@ -30,8 +31,13 @@ export const Main: React.FC = () => {
                         </Text>
                         <Button as={"a"} btnType={'primary'} href={'#contacts'} title={'labkovich.vl@gmail.com'}>Contact
                             Me</Button>
+
                     </MainContent>
-                    <Photo src={photo}></Photo>
+                    {/*<Photo src={photo}></Photo>*/}
+                    <Tilt>
+                        <Photo src={photo}></Photo>
+                    </Tilt>
+
                     <StyledScrollLink>
                         <a href="#footer">
                             <Icon iconId={'scroll'} width="32" height="32" viewBox="0 0 32 32"/>
@@ -97,7 +103,7 @@ const MainTitle = styled.h1`
     p {
         display: none;
     }
-    
+
     @media ${Theme.media.tablet} {
         text-align: center;
         margin: 0 0 10px 0;
