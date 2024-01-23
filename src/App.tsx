@@ -7,10 +7,12 @@ import {Skills} from "./layout/sections/skills/Skills";
 import {Projects} from "./layout/sections/projects/Projects";
 import {Contacts} from "./layout/sections/contacts/Contact";
 import {Footer} from "./layout/footer/Footer";
+import {Particle} from "./components/particle/Particle";
 
 function App() {
   return (
     <div className="App">
+        {/*<Particle/>*/}
         <Header/>
         <Main/>
         <AboutMe/>
