@@ -33,10 +33,10 @@ export const Main: React.FC = () => {
                             Me</Button>
 
                     </MainContent>
-                    {/*<Photo src={photo}></Photo>*/}
-                    <Tilt>
-                        <Photo src={photo}></Photo>
-                    </Tilt>
+                    <Photo src={photo}></Photo>
+                    {/*<Tilt>*/}
+                    {/*    <Photo src={photo}></Photo>*/}
+                    {/*</Tilt>*/}
 
                     <StyledScrollLink>
                         <a href="#footer">
