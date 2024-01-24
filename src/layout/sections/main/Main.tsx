@@ -19,7 +19,7 @@ export const Main: React.FC = () => {
                             <p>FRONT-END DEVELOPER</p>
                             <Typewriter
                                 options={{
-                                    strings: ['FRONT-END DEVELOPER', 'WEB-DEVELOPER', 'REACT DEVELOPER',],
+                                    strings: ['FRONT-END DEVELOPER', 'WEB-DEVELOPER', 'REACT-DEVELOPER',],
                                     autoStart: true,
                                     loop: true,
                                 }}

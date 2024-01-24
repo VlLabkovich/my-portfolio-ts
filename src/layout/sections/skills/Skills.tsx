@@ -10,7 +10,7 @@ import { Fade } from "react-awesome-reveal";
 
 export const Skills: React.FC = () => {
     return (
-        <StyledSkillsContent id="skills">
+        <StyledSkillsContent id={"skills"}>
             <Container>
                 <SectionTitle>Tech Skills</SectionTitle>
 

@@ -6,7 +6,7 @@ import {Theme} from "../../../styles/Theme";
 
 export const Contacts: React.FC = () => {
     return (
-        <StyledContacts id="contacts">
+        <StyledContacts id={"contacts"}>
             <Container>
                 <SectionTitle>Contact Me</SectionTitle>
                 <StyledForm>

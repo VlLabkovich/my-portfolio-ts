@@ -17,7 +17,7 @@ export const Projects: React.FC = () => {
     const projectsToShow = (showAll || showAllByDefault) ? workProjects : workProjects.slice(0, defaultShow);
 
     return (
-        <StyledProjectsContent id="projects">
+        <StyledProjectsContent id={"projects"}>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 {/*<FlexWrapper justify={'center'} wrap={'wrap'}>*/}
