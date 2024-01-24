@@ -2,6 +2,7 @@ import React from "react";
 import styled, {css} from "styled-components";
 import {Button} from "../../components/Button";
 import {Theme} from "../../styles/Theme";
+import {Link} from "react-scroll";
 
 export type MenuPropsType = {
     menuItems: Array<{
@@ -19,7 +20,7 @@ export const HeaderMenu = (props: MenuPropsType) => {
             <ListMenu>
                 {props.menuItems.map((item, index) => {
                     return <ListItems key={index}>
-                        <Button fontSize={'15px'} btnType={item.btnType} as={"a"} href={`#${item.href}`}>{item.text}</Button>
+                        <Button fontSize={'15px'} btnType={item.btnType} as={Link} smooth={true} to={item.href}>{item.text}</Button>
                     </ListItems>
                 })}
             </ListMenu>
