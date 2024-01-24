@@ -8,6 +8,8 @@ import {Button} from "../../../components/Button";
 import {Theme} from "../../../styles/Theme";
 import Typewriter from 'typewriter-effect';
 import Tilt from 'react-parallax-tilt';
+import {Link} from "react-scroll";
+import {animateScroll as scroll} from 'react-scroll'
 
 export const Main: React.FC = () => {
     return (
@@ -29,7 +31,7 @@ export const Main: React.FC = () => {
                         <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line
                             of code at a time.
                         </Text>
-                        <Button as={"a"} btnType={'primary'} href={'#contacts'} title={'labkovich.vl@gmail.com'}>Contact
+                        <Button btnType={'primary'} as={(Link)} smooth={true} to={`contacts`} title={'labkovich.vl@gmail.com'}>Contact
                             Me</Button>
 
                     </MainContent>
@@ -39,7 +41,7 @@ export const Main: React.FC = () => {
                     {/*</Tilt>*/}
 
                     <StyledScrollLink>
-                        <a href="#footer">
+                        <a onClick={()=>{scroll.scrollToBottom()}}>
                             <Icon iconId={'scroll'} width="32" height="32" viewBox="0 0 32 32"/>
                         </a>
                     </StyledScrollLink>
