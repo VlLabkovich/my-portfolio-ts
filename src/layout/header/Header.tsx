@@ -9,15 +9,15 @@ import {Theme} from "../../styles/Theme";
 const itemsHeader = [
     {
         text: 'Skills',
-        href: '#skills',
+        href: 'skills',
         btnType: '#'
     }, {
         text: 'Projects',
-        href: '#projects',
+        href: 'projects',
         btnType: '#'
     }, {
         text: 'Contact',
-        href: '#contacts',
+        href: 'contacts',
         btnType: 'primary'
     },
 ];

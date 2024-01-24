@@ -16,7 +16,7 @@ export const FooterMenu = (props: MenuPropsType) => {
             <ul>
                 {props.menuItems.map((item, index) => {
                     return <li key={index}>
-                        <Button btnType={item.btnType} as={"a"} href={item.href}>{item.text}</Button>
+                        <Button btnType={item.btnType} as={"a"} href={`#${item.href}`}>{item.text}</Button>
                     </li>
                 })}
             </ul>

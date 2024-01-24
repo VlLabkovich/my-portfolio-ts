@@ -9,11 +9,11 @@ import {Theme} from "../../styles/Theme";
 const itemsFooter = [
     {
         text: 'Projects',
-        href: '#',
+        href: 'projects',
         btnType: '#'
     }, {
         text: 'Contact',
-        href: '#',
+        href: 'contacts',
         btnType: '#'
     },
 ];
