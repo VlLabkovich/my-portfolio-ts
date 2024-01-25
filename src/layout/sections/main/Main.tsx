@@ -15,7 +15,7 @@ export const Main: React.FC = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper justify={'space-between'} wrap={'wrap'}>
+                <FlexWrapper justify={'space-between'} align={'centr'}  wrap={'wrap'}>
                     <MainContent>
                         <MainTitle>
                             <p>FRONT-END DEVELOPER</p>
@@ -36,10 +36,6 @@ export const Main: React.FC = () => {
 
                     </MainContent>
                     <Photo src={photo}></Photo>
-                    {/*<Tilt>*/}
-                    {/*    <Photo src={photo}></Photo>*/}
-                    {/*</Tilt>*/}
-
                     <StyledScrollLink>
                         <a onClick={()=>{scroll.scrollToBottom()}}>
                             <Icon iconId={'scroll'} width="32" height="32" viewBox="0 0 32 32"/>
@@ -51,12 +47,16 @@ export const Main: React.FC = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
+    display: flex;
+    align-items: center;
+    min-height: 85vh;
     position: relative;
-
+    
     @media ${Theme.media.tablet} {
 
         ${FlexWrapper} {
+            padding-top: 20px;
             justify-content: center;
             align-items: center;
             flex-direction: column-reverse;
@@ -64,7 +64,7 @@ const StyledMain = styled.div`
 
 
         @media ${Theme.media.mobile} {
-
+            padding-top: 20px;
             ${FlexWrapper} {
                 justify-content: center;
                 align-items: center;
@@ -78,18 +78,17 @@ const MainContent = styled.div`
     max-width: 520px;
     width: 100%;
     min-height: 278px;
-    margin-top: 40px;
-    //outline: 3px solid red;
 
     @media ${Theme.media.tablet} {
         max-width: 329px;
+        width: 100%;
         text-align: center;
     }
 
     @media ${Theme.media.mobile} {
         max-width: 329px;
+        width: 100%;
         text-align: center;
-        margin-top: 0;
     }
 
 `
@@ -109,7 +108,7 @@ const MainTitle = styled.h1`
 
     @media ${Theme.media.tablet} {
         text-align: center;
-        margin: 0 0 10px 0;
+        margin: 40px 0 10px 0;
     }
 
     @media ${Theme.media.mobile} {
@@ -144,7 +143,7 @@ const Text = styled.p`
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.64px;
-    margin: 11px 0 29px 6px;
+    margin: 10px 0 28px 6px;
 
     @media ${Theme.media.tablet} {
         text-align: center;
@@ -170,17 +169,16 @@ const Photo = styled.img`
     height: 482px;
     object-fit: cover;
     border-radius: 10px;
-    margin-top: 40px;
+  
 
     @media ${Theme.media.mobile} {
         width: unset;
-        margin-top: 29px;
     }
 `
 const StyledScrollLink = styled.a`
     position: absolute;
-    margin-top: 560px;
     left: 50%;
+    bottom: 1%;
 
     @media ${Theme.media.desktop} {
         display: none;

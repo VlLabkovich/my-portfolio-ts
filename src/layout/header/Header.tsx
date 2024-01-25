@@ -37,10 +37,6 @@ export const Header: React.FC = () => {
 
 const StyledHeader = styled.header`
     position: relative;
-
     display: flex;
     min-height: 100px;
-    @media ${Theme.media.mobile} {
-        gap: 0;
-    }
 `

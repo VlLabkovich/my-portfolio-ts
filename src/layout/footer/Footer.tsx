@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
 const StyledFooter = styled.footer`
     position: relative;
 
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 
     span {
         display: block;

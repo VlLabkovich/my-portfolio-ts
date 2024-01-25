@@ -20,7 +20,7 @@ export const Projects: React.FC = () => {
         <StyledProjectsContent id={"projects"}>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
-                {/*<FlexWrapper justify={'center'} wrap={'wrap'}>*/}
+
                 <StyledContent>
                     {projectsToShow.map((p) => {
                         return <Project image={p.src}
@@ -30,16 +30,15 @@ export const Projects: React.FC = () => {
                         />
                     })}
                 </StyledContent>
-
+                <FlexWrapper justify={'center'}>
                     {
                         showAllByDefault ? null :
                             <Button onClick={() => setShowAll(val => !val)} width={'305px'} height={'56px'}
-                                    padding={'12px 20px 13px 20px'} marginTop={'20px'}
+                                    padding={'12px 20px 13px 20px'}
                                     btnType={'secondary'} as={'a'}
                                     type={'button'}>{showAll ? 'HIDE PROJECTS' : 'SEE ALL PROJECTS'}</Button>
                     }
-
-                {/*</FlexWrapper>*/}
+                </FlexWrapper>
             </Container>
         </StyledProjectsContent>
     );
@@ -47,34 +46,16 @@ export const Projects: React.FC = () => {
 
 const StyledProjectsContent = styled.section`
     position: relative;
-    ${Button} {
-        margin: 36px auto 140px;
-
-    }
-
-
-    @media ${Theme.media.mobile} {
-        margin-bottom: 177px;
-    }
-
-        // ${FlexWrapper} {
-    //     row-gap: 43px;
-    //     column-gap: 27px;
-    //
-        //     @media ${Theme.media.mobile} {
-    //         row-gap: 16px;
-    //         column-gap: 0;
-    //     }
-    // }
-
-    @media ${Theme.media.mobile} {
-
-    }
+    padding: 140px 0 140px;
+    background-color: ${Theme.colors.bgColor};
+    align-items: center;
+    justify-content: center;
 `
 
 const StyledContent = styled.div`
     display: flex;
     justify-content: center;
+    margin-bottom: 36px;
     flex-wrap: wrap;
     row-gap: 43px;
     column-gap: 27px;

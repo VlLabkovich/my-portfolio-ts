@@ -33,9 +33,8 @@ export const Skills: React.FC = () => {
 };
 
 const StyledSkillsContent = styled.section`
+    background-color: ${Theme.colors.bgColor};
     position: relative;
-
-    margin: 140px 0;
     ${FlexWrapper} {
         row-gap: 59px;
         column-gap: 120px;

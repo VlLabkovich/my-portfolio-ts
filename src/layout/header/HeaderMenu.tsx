@@ -37,10 +37,9 @@ const ListMenu = styled.ul`
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin: 39px 0 41px;
-    
+
     @media ${Theme.media.mobile} {
-        margin: 27px 0;
+        padding: 27px 0;
         gap: normal;
     }
 

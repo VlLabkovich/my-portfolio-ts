@@ -35,14 +35,21 @@ const StyledProject = styled.div`
     background-color: white;
     position: relative;
     max-width: 522px;
-    height: 636px;
+    min-height: 636px;
     box-shadow: 2px 2px 32px 0 rgba(40, 38, 44, 0.15);
     border-radius: 6px;
-
-    @media ${Theme.media.mobile} {
-        max-width: 363px;
-        height: 574px;
+    
+    @media ${Theme.media.desktop} {
+        max-width: 522px;
+        min-height: unset;
     }
+    
+    @media ${Theme.media.mobile} {
+        max-width: 384px;
+        min-height: unset;
+    }
+    
+
 `
 
 const StyledProjectImg = styled.img`
@@ -54,10 +61,10 @@ const StyledProjectImg = styled.img`
 const Title = styled.h3``
 
 const StyledContent = styled.div`
-    margin: 29px 9px 32px 26px;
+    padding: 28px 10px 32px 26px;
 
     @media ${Theme.media.mobile} {
-        margin: 16px 7px 19px 18px;
+        padding: 16px 8px 20px 18px;
     }
 `
 
@@ -65,7 +72,7 @@ const StyledTags = styled.div`
     display: inline-flex;
     flex-wrap: wrap;
     gap: 12px;
-    padding: 11px 0 19px;
+    margin: 10px 0 20px;
 `
 
 const Tags = styled.span`
@@ -78,5 +85,5 @@ const Tags = styled.span`
 `
 
 const Text = styled.p`
-    //outline: 3px solid brown;
+
 `

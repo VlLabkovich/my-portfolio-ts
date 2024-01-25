@@ -36,7 +36,7 @@ export const Button = styled.button<ButtonPropsType>`
             background-color: ${Theme.colors.accent};
             z-index: -1;
         }
-        color: #534084D6;
+        color: ${Theme.colors.btn_hover};
     }
 
     @media ${Theme.media.mobile} {
@@ -79,7 +79,6 @@ export const Button = styled.button<ButtonPropsType>`
         margin-top: ${props => props.marginTop};
         max-width: ${props => props.width};
         width: 100%;
-        height: ${props => props.height};
         padding: ${props => props.padding};
         border-radius: 6px;
         background-color: ${Theme.colors.accent};

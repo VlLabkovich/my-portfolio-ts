@@ -30,9 +30,8 @@ export const AboutMe: React.FC = () => {
 
 const StyledAboutMe = styled.section`
     position: relative;
-
-    margin-top: 356px;
-    
+    background-color: ${Theme.colors.bgColor};
+    padding: 100px 0 140px;
     @media ${Theme.media.mobile} {
         margin-top: 85px;
     }
@@ -40,12 +39,13 @@ const StyledAboutMe = styled.section`
 
 const StyledContent = styled.div`
     max-width: 843px;
-    margin-left: 17px;
+    width: 100%;
+    padding-left: 17px;
 
 
 
     @media ${Theme.media.desktop} {
-        margin-left: 17px;
+        padding-left: 17px;
     }
 
 `
