@@ -42,11 +42,15 @@ const StyledSkill = styled.div`
 
     @media ${Theme.media.mobile} {
         gap: 15px;
+        
+        svg {
+            transform: scale(.8);
+        }
     }
 `
 
 const SkillTitle = styled.h3`
-    color: ${Theme.colors.text}
+    color: ${Theme.colors.text};
     text-align: center;
     font-size: 16px;
     font-weight: 400;
