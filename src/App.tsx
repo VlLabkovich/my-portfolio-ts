@@ -12,7 +12,7 @@ import {Particle} from "./components/particle/Particle";
 function App() {
   return (
     <div className="App">
-        {/*<Particle/>*/}
+        <Particle/>
         <Header/>
         <Main/>
         <AboutMe/>
