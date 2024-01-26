@@ -32,9 +32,6 @@ const StyledAboutMe = styled.section`
     position: relative;
     background-color: ${Theme.colors.bgColor};
     padding: 100px 0 140px;
-    @media ${Theme.media.mobile} {
-        margin-top: 85px;
-    }
 `
 
 const StyledContent = styled.div`
