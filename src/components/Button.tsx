@@ -22,7 +22,6 @@ export const Button = styled.button<ButtonPropsType>`
     font-weight: 500;
     
     ${props => props.btnType === "primary" && css<ButtonPropsType>`
-
         &::before {
             content: "";
             position: absolute;
@@ -34,6 +33,7 @@ export const Button = styled.button<ButtonPropsType>`
             transform: translateX(-50%);
             background-color: ${Theme.colors.accent};
             z-index: -1;
+            transition: ${Theme.animations.transition};
         }
 
         &:hover {
@@ -44,6 +44,7 @@ export const Button = styled.button<ButtonPropsType>`
                 border-radius: 6px;
                 justify-content: center;
                 align-items: center;
+                transition: ${Theme.animations.transition};
             }
 
             color: ${Theme.colors.link_hover};
@@ -65,27 +66,36 @@ export const Button = styled.button<ButtonPropsType>`
         }
         
         &:active {
+            transition: ${Theme.animations.transitionBtn};
             background-color: ${Theme.colors.btn_active} ;
         }
     `
     }
 
     ${props => props.btnType === "thirdly" && css<ButtonPropsType>`
+        
+        &::before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            height: 0;
+            width: 50%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: ${Theme.colors.accent};
+            z-index: -1;
+        }
+
         &:hover {
             &::before {
-                content: "";
-                position: absolute;
-                display: inline-block;
                 height: 6px;
-                width: 50%;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: ${Theme.colors.accent};
-                z-index: -1;
+                transition: ${Theme.animations.transition};
             }
 
+            transition: ${Theme.animations.transition};
             color: ${Theme.colors.btn_hover};
+            
         }
     `
     }
