@@ -33,8 +33,7 @@ export const Projects: React.FC = () => {
                 <FlexWrapper justify={'center'}>
                     {
                         showAllByDefault ? null :
-                            <Button onClick={() => setShowAll(val => !val)} width={'305px'} height={'56px'}
-                                    padding={'12px 20px 13px 20px'}
+                            <Button onClick={() => setShowAll(val => !val)} width={'305px'}
                                     btnType={'secondary'} as={'a'}
                                     type={'button'}>{showAll ? 'HIDE PROJECTS' : 'SEE ALL PROJECTS'}</Button>
                     }
@@ -50,6 +49,10 @@ const StyledProjectsContent = styled.section`
     background-color: ${Theme.colors.bgColor};
     align-items: center;
     justify-content: center;
+    ${Button} {
+        &:active {
+            background-color: #8e75cc;
+        }
 `
 
 const StyledContent = styled.div`

@@ -9,7 +9,6 @@ export type MenuPropsType = {
         text: string
         href: string
         btnType: string
-        fontSize?: string
     }>
 }
 
@@ -20,7 +19,7 @@ export const HeaderMenu = (props: MenuPropsType) => {
             <ListMenu>
                 {props.menuItems.map((item, index) => {
                     return <ListItems key={index}>
-                        <Button fontSize={'15px'} btnType={item.btnType} as={Link} smooth={true} to={item.href}>{item.text}</Button>
+                        <Button btnType={item.btnType} as={Link} smooth={true} to={item.href}>{item.text}</Button>
                     </ListItems>
                 })}
             </ListMenu>
@@ -29,7 +28,6 @@ export const HeaderMenu = (props: MenuPropsType) => {
 };
 
 export const StyledHeaderMenu = styled.nav`
-
 `
 
 const ListMenu = styled.ul`
@@ -46,6 +44,10 @@ const ListMenu = styled.ul`
 `
 
 const ListItems = styled.li`
- 
+    ${Button} {
+        @media ${Theme.media.mobile} {
+            font-size: 15px;
+        }
+    }
 `
 

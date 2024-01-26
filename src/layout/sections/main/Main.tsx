@@ -52,25 +52,15 @@ const StyledMain = styled.section`
     align-items: center;
     min-height: 85vh;
     position: relative;
+    margin-bottom: 10px;
     
     @media ${Theme.media.tablet} {
 
         ${FlexWrapper} {
-            padding-top: 20px;
+            padding-top: 30px;
             justify-content: center;
             align-items: center;
             flex-direction: column-reverse;
-        }
-
-
-        @media ${Theme.media.mobile} {
-            padding-top: 20px;
-            ${FlexWrapper} {
-                justify-content: center;
-                align-items: center;
-                flex-direction: column-reverse;
-            }
-
         }
 `
 

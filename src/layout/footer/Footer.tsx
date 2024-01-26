@@ -10,11 +10,11 @@ const itemsFooter = [
     {
         text: 'Projects',
         href: 'projects',
-        btnType: '#'
+        btnType: 'thirdly'
     }, {
         text: 'Contact',
         href: 'contacts',
-        btnType: '#'
+        btnType: 'thirdly'
     },
 ];
 
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
                         </a>
                     </StyledFooterIcon>
                     <FooterMenu menuItems={itemsFooter}/>
-                    <Copyright>© 2024 Labkovich Vladislav, All Rights Reserved.</Copyright>
+                    <Copyright>© 2024 Labkovich Vladislav. All Rights Reserved.</Copyright>
                 </FlexWrapper>
             </Container>
         </StyledFooter>

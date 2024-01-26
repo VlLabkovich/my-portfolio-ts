@@ -8,12 +8,10 @@ export type ButtonPropsType = {
     height?: string
     padding?: string
     marginTop?: string
-    fontSize?: string
 }
 
 export const Button = styled.button<ButtonPropsType>`
-    //font-size: inherit;
-    //font-weight: inherit;
+    font-family: 'Montserrat', sans-serif;
     line-height: normal;
     position: relative;
     z-index: 0;
@@ -22,28 +20,9 @@ export const Button = styled.button<ButtonPropsType>`
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-
-    &:hover {
-        &::before {
-            content: "";
-            position: absolute;
-            display: inline-block;
-            height: 6px;
-            width: 50%;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: ${Theme.colors.accent};
-            z-index: -1;
-        }
-        color: ${Theme.colors.btn_hover};
-    }
-
-    @media ${Theme.media.mobile} {
-        font-size: ${props => props.fontSize};
-    }
-
+    
     ${props => props.btnType === "primary" && css<ButtonPropsType>`
+
         &::before {
             content: "";
             position: absolute;
@@ -73,9 +52,6 @@ export const Button = styled.button<ButtonPropsType>`
     }
 
     ${props => props.btnType === "secondary" && css<ButtonPropsType>`
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: ${props => props.marginTop};
         max-width: ${props => props.width};
         width: 100%;
@@ -84,8 +60,32 @@ export const Button = styled.button<ButtonPropsType>`
         background-color: ${Theme.colors.accent};
         color: ${Theme.colors.link_hover};
         
-        &:hover{
+        &:hover {
             color: ${Theme.colors.link_hover};
+        }
+        
+        &:active {
+            background-color: ${Theme.colors.btn_active} ;
+        }
+    `
+    }
+
+    ${props => props.btnType === "thirdly" && css<ButtonPropsType>`
+        &:hover {
+            &::before {
+                content: "";
+                position: absolute;
+                display: inline-block;
+                height: 6px;
+                width: 50%;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: ${Theme.colors.accent};
+                z-index: -1;
+            }
+
+            color: ${Theme.colors.btn_hover};
         }
     `
     }

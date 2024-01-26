@@ -10,15 +10,15 @@ const itemsHeader = [
     {
         text: 'Skills',
         href: 'skills',
-        btnType: '#'
+        btnType: 'thirdly'
     }, {
         text: 'Projects',
         href: 'projects',
-        btnType: '#'
+        btnType: 'thirdly'
     }, {
         text: 'Contact',
         href: 'contacts',
-        btnType: 'primary'
+        btnType: 'primary',
     },
 ];
 
