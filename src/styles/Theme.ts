@@ -1,7 +1,7 @@
 export const Theme = {
     colors: {
         bgColor: '#FFFFFF',
-        accent: '#5222D0',
+        accent: '#5c31cb',
         font: '#151717',
         text: '#1F2626',
         link: '#1F2626',
@@ -10,7 +10,8 @@ export const Theme = {
         border_input: '#534084',
         link_hover: '#DBFFFF',
         bgCard: '#F5F2FD',
-        btn_hover: '#534084D6'
+        btn_hover: '#534084D6',
+        btn_active: '#7a4ee3'
     },
 
     media: {
