@@ -35,6 +35,7 @@ const StyledProject = styled.div`
     background-color: white;
     position: relative;
     max-width: 522px;
+    width: 100%;
     min-height: 636px;
     box-shadow: 2px 2px 32px 0 rgba(40, 38, 44, 0.15);
     border-radius: 6px;
@@ -54,17 +55,17 @@ const StyledProject = styled.div`
 
 const StyledProjectImg = styled.img`
     width: 100%;
-    height: 100%;
+    padding-top: 15px;
     object-fit: contain;
 `
 
 const Title = styled.h3``
 
 const StyledContent = styled.div`
-    padding: 28px 10px 32px 26px;
+    padding: 28px 20px 32px 26px;
 
     @media ${Theme.media.mobile} {
-        padding: 16px 8px 20px 18px;
+        padding: 16px 12px 20px 18px;
     }
 `
 
@@ -85,5 +86,9 @@ const Tags = styled.span`
 `
 
 const Text = styled.p`
-
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.64px;
 `

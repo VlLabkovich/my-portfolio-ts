@@ -7,6 +7,7 @@ import {Project} from "./project/Project";
 import {Theme} from "../../../styles/Theme";
 import {Button} from "../../../components/Button";
 import {workProjects} from "./WorkData";
+import {Fade} from "react-awesome-reveal";
 
 export const Projects: React.FC = () => {
 
@@ -22,18 +23,21 @@ export const Projects: React.FC = () => {
                 <SectionTitle>Projects</SectionTitle>
 
                 <StyledContent>
-                    {projectsToShow.map((p) => {
-                        return <Project image={p.src}
-                                        title={p.title}
-                                        tags={p.tags}
-                                        text={p.text}
-                        />
-                    })}
+                    <Fade>
+                        {projectsToShow.map((p) => {
+                            return <Project image={p.src}
+                                            title={p.title}
+                                            tags={p.tags}
+                                            text={p.text}
+                            />
+                        })}
+                    </Fade>
                 </StyledContent>
                 <FlexWrapper justify={'center'}>
                     {
                         showAllByDefault ? null :
-                            <Button onClick={() => setShowAll(val => !val)} width={'305px'}
+                            <Button onClick={() => setShowAll(val => !val)}
+                                    width={'305px'}
                                     btnType={'secondary'} as={'a'}
                                     type={'button'}>{showAll ? 'HIDE PROJECTS' : 'SEE ALL PROJECTS'}</Button>
                     }
@@ -47,12 +51,14 @@ const StyledProjectsContent = styled.section`
     position: relative;
     padding: 140px 0 140px;
     background-color: ${Theme.colors.bgColor};
-    align-items: center;
-    justify-content: center;
-    ${Button} {
-        &:active {
-            background-color: #8e75cc;
-        }
+}
+
+${Button} {
+    &:active {
+        background-color: ${Theme.colors.btn_active};
+    }
+}
+
 `
 
 const StyledContent = styled.div`
