@@ -39,9 +39,13 @@ const StyledSkillsContent = styled.section`
         row-gap: 59px;
         column-gap: 120px;
 
-        @media ${Theme.media.mobile} {
-            column-gap: 48px;
+        @media ${Theme.media.tablet} {
+            column-gap: 90px;
             row-gap: 80px;
+        }
+        @media ${Theme.media.mobile} {
+            column-gap: 12px;
+            row-gap: 40px;
         }
     }
 `

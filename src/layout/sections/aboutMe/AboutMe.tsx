@@ -31,7 +31,7 @@ export const AboutMe: React.FC = () => {
 const StyledAboutMe = styled.section`
     position: relative;
     background-color: ${Theme.colors.bgColor};
-    padding: 100px 0 140px;
+    padding: 120px 0 140px;
 `
 
 const StyledContent = styled.div`

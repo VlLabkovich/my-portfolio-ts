@@ -28,7 +28,7 @@ const StyledSkillContent = styled.div`
     width: 120px;
 
     @media ${Theme.media.mobile} {
-        width: 80px;
+        min-width: 80px;
     }
 `
 
@@ -37,13 +37,14 @@ const StyledSkill = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
+    
     @media ${Theme.media.mobile} {
         gap: 15px;
         
         svg {
-            transform: scale(.7);
+            transform: scale(.8);
         }
+
     }
 `
 
@@ -55,7 +56,7 @@ const SkillTitle = styled.h3`
     line-height: normal;
     letter-spacing: 2.166px;
     text-transform: uppercase;
-    white-space: pre-wrap;
+    white-space: normal;
     
     @media ${Theme.media.mobile} {
         font-size: 12px;

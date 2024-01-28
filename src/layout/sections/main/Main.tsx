@@ -15,7 +15,7 @@ export const Main: React.FC = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper justify={'space-between'} align={'centr'}  wrap={'wrap'}>
+                <FlexWrapper justify={'space-between'} wrap={'wrap'}>
                     <MainContent>
                         <MainTitle>
                             <p>FRONT-END DEVELOPER</p>
@@ -31,13 +31,15 @@ export const Main: React.FC = () => {
                         <Text>I’m Vladislav Labkovich, a developer dedicated to making the world a better place one line
                             of code at a time.
                         </Text>
-                        <Button btnType={'primary'} as={(Link)} smooth={true} to={`contacts`} title={'labkovich.vl@gmail.com'}>Contact
+                        <Button btnType={'primary'} as={(Link)} smooth={true} to={`contacts`}
+                                title={'labkovich.vl@gmail.com'}>Contact
                             Me</Button>
-
                     </MainContent>
                     <Photo src={photo}></Photo>
                     <StyledScrollLink>
-                        <a onClick={()=>{scroll.scrollToBottom()}}>
+                        <a onClick={() => {
+                            scroll.scrollToBottom()
+                        }}>
                             <Icon iconId={'scroll'} width="32" height="32" viewBox="0 0 32 32"/>
                         </a>
                     </StyledScrollLink>
@@ -50,14 +52,13 @@ export const Main: React.FC = () => {
 const StyledMain = styled.section`
     display: flex;
     align-items: center;
-    min-height: 85vh;
+    min-height: 86vh;
     position: relative;
-    margin-bottom: 10px;
-    
+
     @media ${Theme.media.tablet} {
 
         ${FlexWrapper} {
-            padding-top: 30px;
+            padding: 30px 0 15px;
             justify-content: center;
             align-items: center;
             flex-direction: column-reverse;
@@ -141,7 +142,7 @@ const Text = styled.p`
         align-items: center;
         max-width: 100%;
         height: auto;
-        margin: 0 0 16px 0;
+        margin: 0 0 23px 0;
     }
 
     @media ${Theme.media.mobile} {
@@ -150,7 +151,7 @@ const Text = styled.p`
         align-items: center;
         max-width: 100%;
         height: auto;
-        margin: 0 0 16px 0;
+        margin: 0 0 23px 0;
     }
 `
 
@@ -159,7 +160,7 @@ const Photo = styled.img`
     height: 482px;
     object-fit: cover;
     border-radius: 10px;
-  
+
 
     @media ${Theme.media.mobile} {
         width: unset;
