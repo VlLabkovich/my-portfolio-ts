@@ -26,11 +26,9 @@ export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
 
 const StyledSkillContent = styled.div`
     width: 120px;
-    height: 164px;
 
     @media ${Theme.media.mobile} {
         width: 80px;
-        height: 120px;
     }
 `
 
@@ -44,7 +42,7 @@ const StyledSkill = styled.div`
         gap: 15px;
         
         svg {
-            transform: scale(.8);
+            transform: scale(.7);
         }
     }
 `

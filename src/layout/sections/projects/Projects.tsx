@@ -49,14 +49,8 @@ export const Projects: React.FC = () => {
 
 const StyledProjectsContent = styled.section`
     position: relative;
-    padding: 140px 0 140px;
+    padding-bottom: 140px;
     background-color: ${Theme.colors.bgColor};
-}
-
-${Button} {
-    &:active {
-        background-color: ${Theme.colors.btn_active};
-    }
 }
 
 `

@@ -20,8 +20,9 @@ export const Button = styled.button<ButtonPropsType>`
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    
+
     ${props => props.btnType === "primary" && css<ButtonPropsType>`
+
         &::before {
             content: "";
             position: absolute;
@@ -52,28 +53,28 @@ export const Button = styled.button<ButtonPropsType>`
     `
     }
 
+
     ${props => props.btnType === "secondary" && css<ButtonPropsType>`
-        margin-top: ${props => props.marginTop};
         max-width: ${props => props.width};
         width: 100%;
-        padding: ${props => props.padding};
         border-radius: 6px;
         background-color: ${Theme.colors.accent};
         color: ${Theme.colors.link_hover};
-        
+
         &:hover {
             color: ${Theme.colors.link_hover};
         }
-        
+
         &:active {
             transition: ${Theme.animations.transitionBtn};
-            background-color: ${Theme.colors.btn_active} ;
+            background-color: ${Theme.colors.btn_active};
         }
     `
     }
 
+
     ${props => props.btnType === "thirdly" && css<ButtonPropsType>`
-        
+
         &::before {
             content: "";
             position: absolute;
@@ -95,7 +96,6 @@ export const Button = styled.button<ButtonPropsType>`
 
             transition: ${Theme.animations.transition};
             color: ${Theme.colors.btn_hover};
-            
         }
     `
     }
