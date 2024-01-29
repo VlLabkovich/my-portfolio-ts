@@ -31,7 +31,7 @@ export const Contact: React.FC = () => {
                             <label>Name</label>
                             <StyledInput placeholder={'What’s your name?'} name={'user_name'}/>
                             <label>Email</label>
-                            <StyledInput placeholder={'Your email'} name={'email'}/>
+                            <StyledInput placeholder={'Your email'} name={'email'} required/>
                             <label>Message</label>
                             <StyledText placeholder={'Tell me about your project . . .'} as={'textarea'} name={'message'}/>
                             <Button btnType={'secondary'} type={'submit'}>Submit</Button>
