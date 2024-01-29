@@ -60,6 +60,11 @@ const StyledFooter = styled.footer`
 const StyledFooterIcon = styled.div`
     display: flex;
     gap: 95px;
+    
+    @media ${Theme.media.mobile} {
+        gap: 50px;
+    }
+    
 `
 
 const StyledTitle = styled.span`
@@ -80,4 +85,8 @@ const Copyright = styled.small`
     font-weight: 400;
     line-height: 26px; /* 185.714% */
     letter-spacing: 0.56px;
+    
+    @media ${Theme.media.mobile} {
+        font-size: 12px;
+    }
 `

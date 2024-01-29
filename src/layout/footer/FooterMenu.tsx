@@ -2,13 +2,15 @@ import React from 'react';
 import styled from "styled-components";
 import {Button} from "../../components/Button";
 import {Link} from "react-scroll";
+import {Theme} from "../../styles/Theme";
 
 export type MenuPropsType = {
-    menuItems: Array<{
-        text: string
-        href: string
-        btnType: string
-    }>
+    menuItems: Array<
+        {
+            text: string
+            href: string
+            btnType: string
+        }>
 }
 
 export const FooterMenu = (props: MenuPropsType) => {
@@ -33,8 +35,16 @@ const ListMenu = styled.ul`
     align-items: center;
     justify-content: center;
     gap: 48px;
-    padding: 49px 0;
+    margin: 49px 0;
+
+    @media ${Theme.media.mobile} {
+        gap: 10px;
+    }
 `
 
 const ListItems = styled.li`
+    ${Button} {
+        @media ${Theme.media.mobile} {
+            font-size: 15px;
+        }
 `
