@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/my-portfolio-ts/static/css/main.31d6cfe0.css",
-    "main.js": "/my-portfolio-ts/static/js/main.fc28c20f.js",
+    "main.js": "/my-portfolio-ts/static/js/main.bf19809a.js",
     "static/js/787.08c60340.chunk.js": "/my-portfolio-ts/static/js/787.08c60340.chunk.js",
-    "static/media/e-commerce.png": "/my-portfolio-ts/static/media/e-commerce.155a79257d2a76910a0e.png",
+    "static/media/todo list.jpg": "/my-portfolio-ts/static/media/todo list.c717d72172be8a693b36.jpg",
+    "static/media/prog-bsuir.png": "/my-portfolio-ts/static/media/prog-bsuir.40a3cc5d262ae575b8f8.png",
     "static/media/photo.jpg": "/my-portfolio-ts/static/media/photo.7a015de17dcefc50ad70.jpg",
     "static/media/social network.webp": "/my-portfolio-ts/static/media/social network.f4264469c0e20ce5f20d.webp",
-    "static/media/beats lerning.png": "/my-portfolio-ts/static/media/beats lerning.f7531f9f634f5229016b.png",
     "static/media/icons-sprite.svg": "/my-portfolio-ts/static/media/icons-sprite.fcc9a7ca1d88708a9b7a18ffc3c23b05.svg",
-    "static/media/sendpay.png": "/my-portfolio-ts/static/media/sendpay.000e8f523decc4bc3501.png",
     "index.html": "/my-portfolio-ts/index.html",
-    "main.fc28c20f.js.map": "/my-portfolio-ts/static/js/main.fc28c20f.js.map",
+    "main.bf19809a.js.map": "/my-portfolio-ts/static/js/main.bf19809a.js.map",
     "787.08c60340.chunk.js.map": "/my-portfolio-ts/static/js/787.08c60340.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.fc28c20f.js"
+    "static/js/main.bf19809a.js"
   ]
 }
