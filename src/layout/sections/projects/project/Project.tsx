@@ -56,6 +56,11 @@ const StyledProjectImg = styled.img`
     height: 318px;
     padding: 20px;
     object-fit: contain;
+    
+    @media ${Theme.media.mobile} {
+        height: unset;
+        padding: unset;
+    }
 `
 
 const Title = styled.h3``
