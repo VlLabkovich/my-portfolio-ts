@@ -12,18 +12,10 @@ export const AboutMe: React.FC = () => {
                 <StyledContent>
                     <FlexWrapper direction={'column'}>
                         <SectionTitle>About Me</SectionTitle>
-                        <Text>The long barrow was built on land previously inhabited in the Mesolithic period. It
-                            consisted
-                            of a sub-rectangular earthen tumulus, estimated to have been 15 metres (50 feet) in length,
-                            with
-                            a chamber built from sarsen megaliths on its eastern end. Both inhumed and cremated human
-                            remains were placed within this chamber during the Neolithic period, representing at least
-                            nine
-                            or ten individuals.</Text>
+                        <Text>Hello, I'm a beginner web-developer. I enjoy creating user interfaces and web applications that are relevant to users. I use the following technologies: HTML, CSS, JavaScript, ReactJS and TypeScript. Now I am improving my skills and expanding them with new knowledge. These are the skills that I have:</Text>
                     </FlexWrapper>
                 </StyledContent>
             </Container>
-
         </StyledAboutMe>
     );
 };
@@ -38,9 +30,7 @@ const StyledContent = styled.div`
     max-width: 843px;
     width: 100%;
     padding-left: 17px;
-
-
-
+    
     @media ${Theme.media.desktop} {
         padding-left: 17px;
     }
