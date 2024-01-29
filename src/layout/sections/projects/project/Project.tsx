@@ -15,7 +15,7 @@ export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => 
     return (
         <StyledProject>
             <FlexWrapper direction={'column'}>
-                <StyledProjectImg src={props.image}/>
+                <StyledProjectImg src={props.image} />
                 <StyledContent>
                     <Title>{props.title}</Title>
                     <StyledTags>{props.tags.map((item, index) => {
@@ -49,13 +49,12 @@ const StyledProject = styled.div`
         max-width: 384px;
         min-height: unset;
     }
-    
-
 `
 
 const StyledProjectImg = styled.img`
     width: 100%;
-    padding-top: 15px;
+    height: 318px;
+    padding: 20px;
     object-fit: contain;
 `
 
